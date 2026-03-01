@@ -1,0 +1,16 @@
+# CDM Index
+
+Governance Index: [Canonical-DSL-Governance](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Governance/Canonical-DSL-Governance.md)
+Experience Package: [Experience-Canonical](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Experience/Experience-Canonical.md)
+ChangeOperators Canonical: [ChangeOperators-Canonical](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/ChangeOperators-Canonical.md)
+ChangeOperators Profile: [ChangeOperators-Access-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/ChangeOperators-Access-Profile.md)
+TIL Profile: [TIL-Implementation-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/TIL-Implementation-Profile.md)
+TIL Lifecycle Profile: [TIL-Lifecycle-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/TIL-Lifecycle-Profile.md)
+Operator Novelty Profile (optional): [Operator-Novelty-Constraint-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/Operator-Novelty-Constraint-Profile.md)
+ChangeOperators Examples: [ChangeOperators-Examples](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/ChangeOperators-Examples.md)
+System Canonical: [System-Canonical](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/System/System-Canonical.md)
+Identity Canonical: [Identity-Canonical](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/System/Identity-Canonical.md)
+Identity Profile: [Identity-Scoring-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/System/Identity-Scoring-Profile.md)
+Identity Examples: [Identity-Examples](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/System/Identity-Examples.md)
+System Classification Profile: [System-Classification-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/System/System-Classification-Profile.md)
+Applied Rule Profile: [RLC-CC](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/RLC-CC-Profile.md), [ROS](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/ROS-Profile.md), [SEC-OC](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/SEC-OC-Profile.md), [Observer](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/Observer-Profile.md)
