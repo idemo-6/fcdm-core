@@ -1,0 +1,7 @@
+# NOTICE
+
+- Repository: fcdm-core
+- Scope: universal domain-agnostic theory (FROR + CDM + bridge)
+- License: CC BY 4.0
+
+No IS-specific runtime artifacts (ICSS/parser/SQL/runtime code) are included in this repository by design.
