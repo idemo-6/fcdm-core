@@ -25,16 +25,16 @@ Source of truth для смысловой модели:
 - `CDM/Specifications/ChangeFlow-6_v3.md`
 - `CDM/Specifications/Intent-1.1.5.md`
 - `CDM/Specifications/Context/Context-Canonical.md`
-- `CDM/Specifications/CDL/CDL-Canonical.md`
+- `CDM/Specifications/CtxL/CtxL-Canonical.md`
 
 При конфликте терминов/ролей между каноном и DSL приоритет всегда у канона.
 
 ### 2.2 Машинный профиль (уровень исполнения)
 
 Source of truth для компиляции/валидации:
-- `intent_parser/spec_unified_v1.md`
-- `intent_parser/runtime/schema/intent_ir_v1.json`
-- `intent_parser/runtime/tests/conformance/*`
+- `idemo-machine/docs/parser/spec_unified_v1.md`
+- `idemo-machine/schemas/intent_ir_v1.json`
+- `idemo-machine/tests/conformance/*`
 
 Эти артефакты не меняют онтологию; они задают исполнимый профиль представления.
 
@@ -66,7 +66,7 @@ Source of truth для компиляции/валидации:
 - mapping-секции в `ChangeFlow-6_v3.md` (ICSS profile), если затронута исполнимая репрезентация.
 
 2. `P`-изменение требует обновления:
-- `intent_parser/spec_unified_v1.md`;
+- `idemo-machine/docs/parser/spec_unified_v1.md`;
 - JSON Schema и/или conformance cases при изменении структуры/валидации.
 
 3. `CP`-изменение принимается только при атомарной синхронизации:
@@ -106,9 +106,9 @@ Source of truth для компиляции/валидации:
 Минимальная матрица проверки для каждого PR:
 
 1. `Canonical docs` -> `ChangeFlow profile section` (алиасы фаз, инварианты).
-2. `Context/Intent semantics` -> `spec_unified_v1` (declared/use/materialize, result semantics).
-3. `spec_unified_v1` -> `intent_ir_v1.json` (структурная совместимость).
-4. `spec_unified_v1` -> `conformance cases` (валидные/невалидные сценарии).
+2. `Context/Intent semantics` -> `idemo-machine/docs/parser/spec_unified_v1.md` (declared/use/materialize, result semantics).
+3. `idemo-machine/docs/parser/spec_unified_v1.md` -> `idemo-machine/schemas/intent_ir_v1.json` (структурная совместимость).
+4. `idemo-machine/docs/parser/spec_unified_v1.md` -> `idemo-machine/tests/conformance/*` (валидные/невалидные сценарии).
 
 ---
 

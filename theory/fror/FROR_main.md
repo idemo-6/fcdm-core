@@ -8,7 +8,7 @@
 - [[FROR_3plus1_phase]]
 - [[FROR_SLOT]]
 - [[FROR_normalizations_invariants]]
-- [[FROR_CDL_bridge]]
+- [[FROR_CDM_bridge]]
 
 ------------------------------------------------------------------------
 

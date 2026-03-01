@@ -1,15 +1,15 @@
 ---
-title: "Спецификация: CDL (каноническая)"
+title: "Спецификация: CtxL (каноническая)"
 date: 2026-02-28
-tags: [CDM, CDL, canonical, Context, Intent, Experience]
-citekey: cdm_cdl_canonical_ru_2026
+tags: [CDM, CtxL, canonical, Context, Intent, Experience]
+citekey: cdm_ctxl_canonical_ru_2026
 ---
 
-# Спецификация: CDL (каноническая)
+# Спецификация: CtxL (каноническая)
 
 ## 1. Область
 
-Документ задает каноническую `Context-Dependent Logic (CDL)` для CDM:
+Документ задает каноническую `Context-Dependent Logic (CtxL)` для CDM:
 - контекстно-зависимую истинность;
 - различие между внутриконтекстным конфликтом и межконтекстной дивергенцией;
 - связь с `Intent`, `ChangeFlow` и `Experience`.
@@ -89,7 +89,7 @@ citekey: cdm_cdl_canonical_ru_2026
 
 `Result in {+1, 0, -1}`.
 
-В CDL:
+В CtxL:
 
 `Result = 0 <=> ApplicabilityFailure(Intent, C_active^k, LC_phase)`.
 
@@ -102,8 +102,64 @@ citekey: cdm_cdl_canonical_ru_2026
 
 ---
 
-## 8. Главный принцип CDL
+## 8. Главный принцип CtxL
 
 Логическая применимость утверждения определяется активным контекстом системы.
 
 Межконтекстные различия не являются логическими противоречиями.
+
+---
+
+## 9. Короткий набор аксиом CtxL
+
+`A1 (System-first)`:
+высказывания, Intent и оценки интерпретируются относительно единой системы `Y`; домены являются контекстами этой системы.
+
+`A2 (Context-bounded truth)`:
+истинность всегда контекстна:
+`Truth(P, C)` корректно определена только при фиксированном `C`.
+
+`A3 (Non-collapse of undefined and inapplicable)`:
+`Undefined` не эквивалентно `Inapplicable`;
+`Undefined` является частным случаем неприменимости в фиксированном контексте.
+
+`A4 (Cross-context non-contradiction)`:
+если `Truth(P, Ci) != Truth(P, Cj)` при `Ci != Cj`, это межконтекстная дивергенция, а не логическое противоречие.
+
+`A5 (Applicability gate)`:
+операционный результат для Intent допускается только при `Applicable(Intent, C_active, LC_phase)=true`.
+Иначе фиксируется `Result=0` на runtime-уровне.
+
+---
+
+## 10. Минимальная формальная семантика Defined/Applicable/Result
+
+Для фиксированного контекста `C`:
+
+1. `Defined(P, C) in {true,false}` — определимость выражения в семантическом пространстве `C`.
+2. `Applicable(Intent, C, LC_phase) in {true,false}` — реализуемость Intent в `C` при текущей фазе `LC`.
+3. `Result in {+1,0,-1}` — runtime-класс исхода.
+
+Нормативные правила:
+
+1. `not Defined(P, C) => not Applicable(Intent(P), C, LC_phase)`.
+2. `Defined(P, C) and not Applicable(Intent(P), C, LC_phase)` допустимо и не сводится к `Undefined`.
+3. `Result=0 <=> not Applicable(Intent, C_active, LC_phase)`.
+4. Если `Applicable=true`, тогда `Result in {+1,-1}`.
+
+Операционная декомпозиция причин `Result=0`:
+- `AF_sem` (семантическая неприменимость),
+- `AF_epi` (эпистемическая неприменимость),
+- `AF_sto` (стохастическая неприменимость),
+- `mixed`.
+
+---
+
+## 11. Каноническая таблица состояний (фиксированный контекст)
+
+| Defined | Applicable | Runtime Result | Интерпретация |
+|---|---|---|---|
+| false | false | 0 | `Inapplicable_due_to_undefined` |
+| true | false | 0 | `Inapplicable_despite_defined` |
+| true | true | +1/-1 | Применимо, исход положительный/отрицательный |
+| false | true | запрещено | Недопустимая конфигурация модели |

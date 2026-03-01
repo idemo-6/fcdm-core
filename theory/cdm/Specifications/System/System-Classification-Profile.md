@@ -27,7 +27,7 @@ citekey: cdm_system_classification_profile_ru_2026
 - `LifeCycle-6 (каноническая)`
 - `ChangeFlow-6 (каноническая)`
 - `Context (каноническая)`
-- `Intent/CDL (канонические)`
+- `Intent/CtxL (канонические)`
 
 При конфликте приоритет у канонических документов CDM.
 
@@ -74,16 +74,16 @@ citekey: cdm_system_classification_profile_ru_2026
 
 Профиль задает опорные определения для будущей переработки прикладных правил:
 
-1. `RLC/CC` ([RLC-CC-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/RLC-CC-Profile.md))  
+1. `RLC/CC` ([[fcdm-core/theory/cdm/Specifications/AppliedRules/RLC-CC-Profile|RLC-CC-Profile]])  
    Используется как фильтр различения системной декомпозиции и процессной декомпозиции.
 
-2. `ROS` ([ROS-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/ROS-Profile.md))  
+2. `ROS` ([[fcdm-core/theory/cdm/Specifications/AppliedRules/ROS-Profile|ROS-Profile]])  
    Используется как правило остановки декомпозиции после прохождения `RLC/CC`.
 
-3. `SEC/OC` ([SEC-OC-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/SEC-OC-Profile.md))  
+3. `SEC/OC` ([[fcdm-core/theory/cdm/Specifications/AppliedRules/SEC-OC-Profile|SEC-OC-Profile]])  
    Используется как фильтр внешнего контекста относительно текущего `Y`.
 
-4. `Observer` ([Observer-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/AppliedRules/Observer-Profile.md))  
+4. `Observer` ([[fcdm-core/theory/cdm/Specifications/AppliedRules/Observer-Profile|Observer-Profile]])  
    Используется для ресурсно-ограниченной фиксации различий и координации контекстов.
 
 Порядок применения в прикладной практике:

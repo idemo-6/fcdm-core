@@ -17,6 +17,20 @@ citekey: cdm_context_model_core_ru_2026
 - `Applicable(Intent, C_active, LC_phase)`;
 - выбора `OperatorSet`.
 
+## 1.1 Принципы модели
+
+Модель использует следующие канонические допущения:
+
+1. `System-first`: объектом моделирования является единая система `Y`.
+2. `Domain-as-context`: доменные описания интерпретируются как контексты `Ck` системы `Y`.
+3. `Cross-context semantics`: согласование между `Ci` и `Cj` моделируется явно, а не как внешняя пост-обработка.
+
+Формально:
+
+`DomainView_k(Y) := Projection(Y, Ck)`.
+
+Из этого следует, что разные доменные описания одной системы должны сравниваться и координироваться как межконтекстные проекции `Y`, а не как независимые системы.
+
 ---
 
 ## 2. Структура контекста
@@ -115,7 +129,12 @@ citekey: cdm_context_model_core_ru_2026
 
 `Experience = 0 <=> not Applicable(Intent, C_active, LC_phase)`.
 
-Это включает частный случай неопределенности (`not Defined`).
+Это включает частный случай неопределенности (`not Defined`), но не сводится к нему.
+
+Декомпозиция неприменимости:
+
+1. `Inapplicable_due_to_undefined`: `not Defined => not Applicable`.
+2. `Inapplicable_despite_defined`: `Defined and not Applicable`.
 
 ---
 

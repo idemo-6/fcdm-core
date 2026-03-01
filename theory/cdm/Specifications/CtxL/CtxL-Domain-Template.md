@@ -1,10 +1,10 @@
 ---
-title: "Шаблон: Domain CDL Specification"
+title: "Шаблон: Domain CtxL Specification"
 date: 2026-02-28
-tags: [CDM, CDL, domain, template]
+tags: [CDM, CtxL, domain, template]
 ---
 
-# Шаблон: Domain CDL Specification
+# Шаблон: Domain CtxL Specification
 
 ## 1. Domain
 

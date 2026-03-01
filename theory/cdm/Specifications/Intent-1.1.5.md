@@ -264,7 +264,7 @@ CF5 является единственной физической точкой 
 
 ## 1.1.5.15. Профиль формализации ICSS-IntentFlow v1
 
-Для машинной формализации (`intent_parser/spec_unified_v1.md`) принимаются правила представления:
+Для машинной формализации (`idemo-machine/docs/parser/spec_unified_v1.md`) принимаются правила представления:
 
 1. Ровно один root intent block.
 2. Ровно один collect/declaration block `@(... )`.

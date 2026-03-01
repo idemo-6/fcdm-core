@@ -1,7 +1,7 @@
 ---
 title: "Политика: Context Coordination Protocol (default)"
 date: 2026-02-28
-tags: [CDM, Context, CDL, policy, default]
+tags: [CDM, Context, CtxL, policy, default]
 citekey: cdm_context_coordination_policy_default_ru_2026
 ---
 

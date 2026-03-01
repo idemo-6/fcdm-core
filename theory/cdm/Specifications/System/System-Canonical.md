@@ -25,7 +25,7 @@ citekey: cdm_system_canonical_ru_2026
 - `ChangeFlow-6 (каноническая)`
 - `Context (каноническая)`
 - `Intent (каноническая)`
-- `CDL (каноническая)`
+- `CtxL (каноническая)`
 - `Identity (каноническая)`
 
 ---

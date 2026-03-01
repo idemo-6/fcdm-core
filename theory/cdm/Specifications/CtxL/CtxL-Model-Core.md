@@ -1,15 +1,15 @@
 ---
-title: "Модель: CDL Core (междоменная)"
+title: "Модель: CtxL Core (междоменная)"
 date: 2026-02-28
-tags: [CDM, CDL, model, Context, Experience]
-citekey: cdm_cdl_model_core_ru_2026
+tags: [CDM, CtxL, model, Context, Experience]
+citekey: cdm_ctxl_model_core_ru_2026
 ---
 
-# Модель: CDL Core (междоменная)
+# Модель: CtxL Core (междоменная)
 
 ## 1. Назначение
 
-Документ задает междоменную модель вычисления применимости и классификации `Result=0` в рамках CDL.
+Документ задает междоменную модель вычисления применимости и классификации `Result=0` в рамках CtxL.
 
 ---
 

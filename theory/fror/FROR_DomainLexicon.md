@@ -13,7 +13,7 @@ title: "FROR DomainLexicon: доменно-специфическая интер
 - [[FROR_3plus1_phase]]
 - [[FROR_SLOT]]
 - [[FROR_class_measurement]]
-- [[FROR_CDL_bridge]]
+- [[FROR_CDM_bridge]]
 
 ------------------------------------------------------------------------
 

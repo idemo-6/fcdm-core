@@ -265,7 +265,7 @@ ChangeFlow-6 считается опровергнутым для классов
 
 ## 13. Машинный профиль ICSS-IntentFlow (v1)
 
-Для компилируемого профиля `intent_parser/spec_unified_v1.md` используются синтаксические алиасы фаз:
+Для компилируемого профиля `idemo-machine/docs/parser/spec_unified_v1.md` используются синтаксические алиасы фаз:
 
 - `CF1` -> `@(... )` (collect/declaration block);
 - `CF2` -> `??(... ) #analyze`;

@@ -8,6 +8,7 @@ tags: [CDM, Context, domain, template]
 
 ## 1. Domain
 
+- System `Y` (единая система):
 - Domain ID:
 - Domain Name:
 - Связанный DomainLexicon:
@@ -19,6 +20,7 @@ tags: [CDM, Context, domain, template]
 - `Context` в домене:
 - `C-Layer` в домене:
 - `C_active` в домене:
+- Обоснование `Domain-as-context` (почему это контекстная проекция `Y`, а не отдельная система):
 
 Указать соответствие каноническим определениям из `Context-Canonical.md`.
 
@@ -67,6 +69,7 @@ tags: [CDM, Context, domain, template]
 
 ## 7. Тесты валидации
 
+- T0: `System-first` выполнен (домен описывает одну и ту же систему `Y`);
 - T1: внешность контекста относительно `Y`;
 - T2: наблюдаемое влияние на траектории `CF1..CF6`;
 - T3: воспроизводимость вычисления `C_active`;

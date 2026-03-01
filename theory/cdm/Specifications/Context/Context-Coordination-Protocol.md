@@ -1,7 +1,7 @@
 ---
 title: "Спецификация: Context Coordination Protocol (CBP)"
 date: 2026-02-28
-tags: [CDM, Context, CDL, protocol, coordination]
+tags: [CDM, Context, CtxL, protocol, coordination]
 citekey: cdm_context_coordination_protocol_ru_2026
 ---
 
@@ -10,6 +10,11 @@ citekey: cdm_context_coordination_protocol_ru_2026
 ## 1. Область
 
 Документ задает междоменный протокол согласования контекстов в мультиконтекстных системах CDM.
+
+Нормативная рамка:
+- протокол применяется к одной системе `Y`;
+- домены трактуются как контексты этой системы;
+- междоменные конфликты рассматриваются как межконтекстные взаимодействия, а не как столкновение разных онтологий системы.
 
 Протокол применяется при межконтекстной дивергенции для:
 - перевода утверждений и Intent между контекстами;
@@ -34,8 +39,9 @@ citekey: cdm_context_coordination_protocol_ru_2026
 - `Context-Canonical.md`
 - `Context-Model-Core.md`
 - `Context-Coordination-Policy-Default.md`
-- `CDL-Canonical.md`
-- `CDL-Model-Core.md`
+- `Context-Multicontext-Applicability-Profile.md`
+- `CtxL-Canonical.md`
+- `CtxL-Model-Core.md`
 - `Intent-1.1.5.md`
 - `CF-LC-Evaluate.md`
 
@@ -173,7 +179,7 @@ citekey: cdm_context_coordination_protocol_ru_2026
 
 1. Повторяемость: идентичный вход и идентичная политика дают идентичный выход.
 2. Прослеживаемость: выход всегда объясним через конкретные шаги и правила `R1..R4`.
-3. Совместимость с CDL: межконтекстная дивергенция не маркируется как логическое противоречие.
+3. Совместимость с CtxL: межконтекстная дивергенция не маркируется как логическое противоречие.
 4. Совместимость с runtime: в исполнении хранится только `+1/0/-1`; детализация причин выполняется в `evaluate`.
 
 ---

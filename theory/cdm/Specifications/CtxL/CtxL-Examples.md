@@ -1,10 +1,10 @@
 ---
-title: "Примеры: CDL в CDM"
+title: "Примеры: CtxL в CDM"
 date: 2026-02-28
-tags: [CDM, CDL, examples]
+tags: [CDM, CtxL, examples]
 ---
 
-# Примеры: CDL в CDM
+# Примеры: CtxL в CDM
 
 ## 1. Межконтекстная дивергенция (не противоречие)
 

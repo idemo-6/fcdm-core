@@ -1,8 +1,13 @@
 ---
-authors: ["Yakov"]
+authors:
+  - Yakov
 citekey: yakov_domainlexicon_2026
-date: "2026-02-26"
-tags: [CDM, LifeCycle-6, ChangeFlow-6, DomainLexicon, Systems Theory]
+date: 2026-02-26
+tags:
+  - CDM
+  - LifeCycle-6
+  - ChangeFlow-6
+  - DomainLexicon
 title: "DomainLexicon: Domain-Specific Interpretation of LifeCycle and ChangeFlow Phases"
 ---
 

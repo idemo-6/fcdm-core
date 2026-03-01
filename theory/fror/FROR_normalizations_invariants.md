@@ -13,7 +13,7 @@
 - [[FROR_class_measurement]]
 - [[FROR_GRAPH]]
 - [[FROR_DomainLexicon]]
-- [[FROR_CDL_bridge]]
+- [[FROR_CDM_bridge]]
 
 ------------------------------------------------------------------------
 

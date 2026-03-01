@@ -67,7 +67,7 @@ citekey: cdm_til_implementation_profile_ru_2026
 Переходы определяются доменной политикой и метриками качества исполнения.
 
 Расширенный эволюционный цикл реализации описывается в отдельном документе:
-- [TIL-Lifecycle-Profile](/Volumes/WORK/Project/idemo_docs/IDEMO.DOCS/CDM/Specifications/Operators/TIL-Lifecycle-Profile.md)
+- [[fcdm-core/theory/cdm/Specifications/Operators/TIL-Lifecycle-Profile|TIL-Lifecycle-Profile]]
 
 ---
 

@@ -25,7 +25,7 @@ citekey: cdm_experience_canonical_ru_2026
 - Спецификация ChangeFlow-6
 - Спецификация LifeCycle-6
 - Спецификация Context (каноническая)
-- Спецификация CDL (каноническая)
+- Спецификация CtxL (каноническая)
 - Спецификация: Связь ChangeFlow ↔ LifeCycle (Evaluate)
 
 ---
