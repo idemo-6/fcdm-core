@@ -15,6 +15,10 @@ citekey: cdm_system_canonical_ru_2026
 - `Context` / `C-Layer`;
 - `Identity`.
 - `Subjectivity`.
+- `Doubt`.
+- `Viewpoint`.
+- `MetaChangeFlow`.
+- `Creative ChangeFlow`.
 
 Канон фиксирует инварианты сущности системы. Доменные классификации и шкалы сложности выносятся в отдельные профили.
 
@@ -29,6 +33,10 @@ citekey: cdm_system_canonical_ru_2026
 - `CtxL (каноническая)`
 - `Identity (каноническая)`
 - `Subjectivity (каноническая)`
+- `Doubt (каноническая)`
+- `Viewpoint (каноническая)`
+- `MetaChangeFlow (каноническая)`
+- `Creative ChangeFlow (каноническая)`
 
 ---
 
