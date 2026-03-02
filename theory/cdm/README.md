@@ -14,3 +14,6 @@ Identity Profile: [[fcdm-core/theory/cdm/Specifications/System/Identity-Scoring-
 Identity Examples: [[fcdm-core/theory/cdm/Specifications/System/Identity-Examples|Identity-Examples]]
 System Classification Profile: [[fcdm-core/theory/cdm/Specifications/System/System-Classification-Profile|System-Classification-Profile]]
 Applied Rule Profile: [[fcdm-core/theory/cdm/Specifications/AppliedRules/RLC-CC-Profile|RLC-CC]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/ROS-Profile|ROS]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/SEC-OC-Profile|SEC-OC]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/Observer-Profile|Observer]]
+Versioning Canonical: [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
+Version Derivation Policy: [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
+Versioning Examples: [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Examples|Versioning-Examples]]

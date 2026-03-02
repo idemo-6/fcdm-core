@@ -94,6 +94,10 @@ Source of truth для компиляции/валидации:
 - `CDM Canon`: `canon.<major>.<minor>.<patch>`
 - `ICSS Profile`: `icss.<major>.<minor>.<patch>`
 
+Для state-derived versioning сущностей (documents/systems) используется отдельный канон:
+- [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
+- [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
+
 Правила:
 - `major`: несовместимое изменение;
 - `minor`: расширение без нарушения совместимости;
