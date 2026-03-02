@@ -14,6 +14,7 @@ citekey: cdm_system_canonical_ru_2026
 - `ChangeFlow-6`;
 - `Context` / `C-Layer`;
 - `Identity`.
+- `Subjectivity`.
 
 Канон фиксирует инварианты сущности системы. Доменные классификации и шкалы сложности выносятся в отдельные профили.
 
@@ -27,6 +28,7 @@ citekey: cdm_system_canonical_ru_2026
 - `Intent (каноническая)`
 - `CtxL (каноническая)`
 - `Identity (каноническая)`
+- `Subjectivity (каноническая)`
 
 ---
 
