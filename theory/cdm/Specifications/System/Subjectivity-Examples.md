@@ -36,3 +36,21 @@ citekey: cdm_subjectivity_examples_ru_2026
 1. `Q=0` без `Q_min` -> вычисление невалидно.
 2. Сравнение без явного контекста `C` -> неканонично.
 3. Интерпретация `S` как эмоций/сознания -> неканонично.
+---
+
+## 4. Software case with reference agent
+
+См. профильный пример:
+[[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Software-Creativity-Profile|Subjectivity-Domain-Software-Creativity-Profile]].
+
+---
+
+
+## 5. Domain cases
+
+- [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Art-Creativity-Profile|Subjectivity-Domain-Art-Creativity-Profile]]
+- [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Software-Creativity-Profile|Subjectivity-Domain-Software-Creativity-Profile]]
+- [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-ML-Creativity-Profile|Subjectivity-Domain-ML-Creativity-Profile]]
+- [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Corporate-Strategy-Profile|Subjectivity-Domain-Corporate-Strategy-Profile]]
+- [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Biology-Population-Profile|Subjectivity-Domain-Biology-Population-Profile]]
+

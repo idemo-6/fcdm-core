@@ -52,7 +52,8 @@ citekey: cdm_subjectivity_canonical_ru_2026
 - `S(A,B,C)` (межсистемное);
 - `S(A,Ref,C)` (с эталонной системой).
 
-`Ref` задается профильным документом домена и не определяется данным каноном.
+`Ref` задается профильным документом домена.
+Базовые требования к эталонному агенту фиксируются в [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Reference-Agent-Profile|Subjectivity-Reference-Agent-Profile]].
 
 ---
 
@@ -86,4 +87,4 @@ citekey: cdm_subjectivity_canonical_ru_2026
 
 - Формальная модель: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Model-Core|Subjectivity-Model-Core]]
 - Примеры: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Examples|Subjectivity-Examples]]
-- Доменные профили: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-AI-Risk-Profile|Subjectivity-Domain-AI-Risk-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Organization-Profile|Subjectivity-Domain-Organization-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Document-Profile|Subjectivity-Domain-Document-Profile]]
+- Доменные профили: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-AI-Risk-Profile|Subjectivity-Domain-AI-Risk-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Organization-Profile|Subjectivity-Domain-Organization-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Document-Profile|Subjectivity-Domain-Document-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Software-Creativity-Profile|Subjectivity-Domain-Software-Creativity-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Art-Creativity-Profile|Subjectivity-Domain-Art-Creativity-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-ML-Creativity-Profile|Subjectivity-Domain-ML-Creativity-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Corporate-Strategy-Profile|Subjectivity-Domain-Corporate-Strategy-Profile]], [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Biology-Population-Profile|Subjectivity-Domain-Biology-Population-Profile]]

@@ -64,3 +64,11 @@ citekey: cdm_subjectivity_model_core_ru_2026
 
 Документ является общей междоменной моделью.
 Доменные пороги и политики применения задаются в профильных документах.
+
+
+---
+
+## 7. Reference agent
+
+Требования к построению эталона `Ref` задаются в
+[[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Reference-Agent-Profile|Subjectivity-Reference-Agent-Profile]].
