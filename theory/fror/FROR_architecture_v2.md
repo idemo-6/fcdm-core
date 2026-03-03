@@ -21,7 +21,7 @@
 
 Что хранится:
 - базовые объекты (`Ω, Σ, F, c, τ`);
-- аксиомы (`A1..A4`);
+- аксиомы (`A1..A5`);
 - выводимые теоремы уровня канона (например, порог трёхклассовой репрезентации).
 
 Правило:
@@ -110,6 +110,7 @@
 ## 6) Краткая карта источников истины
 
 - Время/необратимость: I3--I4 в [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
+- Определения `c_fix`, `c_bg`, `τ`, `D`, `ΔI_miss`: D4/D4b/D5/D5b/D8 в [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
 - Трихотомия и порог `R >= 3`: A3/T2 в [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
 - Порог памяти для нетривиальной симметрии: [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
 - Доменные rollback-правила: [FROR_DomainLexicon](./FROR_DomainLexicon.md) и [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
