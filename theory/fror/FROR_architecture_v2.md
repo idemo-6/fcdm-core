@@ -37,6 +37,7 @@
 - [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
 - [Claim-Maturity-Profile](../cdm/Specifications/Claim-Maturity-Profile.md)
 - [claims_registry](./claims_registry.yaml)
+- [claim_event_log](./claim_event_log.yaml)
 
 Что хранится:
 - инварианты FROR;
@@ -83,6 +84,7 @@
 - [FROR_GRAPH](./FROR_GRAPH.md)
 - [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
 - [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [check_claim_status_transitions.py](./check_claim_status_transitions.py)
 
 Что хранится:
 - экспериментальные протоколы;
@@ -99,14 +101,16 @@
 Статусы:
 1. `Conjecture` (гипотеза)
 2. `Protocol` (есть воспроизводимый тест)
-3. `Validated in profile` (подтверждено в конкретной нормализации)
-4. `Canonical candidate` (кандидат в Criteria/Core)
+3. `Validated` (подтверждено по протоколу)
+4. `Core` (согласовано с каноном)
 
 Минимальные условия перехода вверх:
 - явные допущения;
 - воспроизводимый протокол;
 - критерий фальсификации;
 - отсутствие конфликта с действующим каноном.
+- переходы фиксируются в `claim_event_log.yaml`, текущий статус сверяется
+  с `claims_registry.yaml` через `check_claim_status_transitions.py`.
 
 ------------------------------------------------------------------------
 
@@ -127,3 +131,8 @@
 2. Проверить, не дублирует ли он существующий источник истины;
 3. Если это дублирование, оставить короткую ссылку на канонический файл;
 4. Если это новый тезис, добавить допущения и фальсификацию.
+
+Для тезисов, включённых в реестр claims:
+1. Добавить событие в `claim_event_log.yaml`;
+2. Обновить `claims_registry.yaml` (только после валидного перехода);
+3. Запустить `python3 check_claim_status_transitions.py`.
