@@ -1,67 +1,52 @@
 #!/usr/bin/env python3
-"""Validate FROR claim status transitions from YAML-like files.
-
-No external dependencies required.
-"""
+"""Validate FROR claim status transitions from YAML files."""
 
 from __future__ import annotations
 
 import argparse
-import re
 import sys
 from collections import defaultdict
 from pathlib import Path
+
+try:
+    import yaml
+except ImportError as exc:  # pragma: no cover
+    print("ERROR: Missing dependency 'PyYAML'.")
+    print("Install with: python3 -m pip install --user PyYAML")
+    raise SystemExit(2) from exc
 
 STATUS_ORDER = ["Conjecture", "Protocol", "Validated", "Core"]
 STATUS_IDX = {name: i for i, name in enumerate(STATUS_ORDER)}
 
 
 def parse_registry(path: Path) -> dict[str, str]:
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     claims: dict[str, str] = {}
-    current_id: str | None = None
-
-    for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.rstrip()
-        m_id = re.match(r"^\s*-\s*claim_id:\s*([A-Z0-9\-_.]+)\s*$", line)
-        if m_id:
-            current_id = m_id.group(1)
+    for item in data.get("claims", []):
+        if not isinstance(item, dict):
             continue
-
-        m_status = re.match(r"^\s*status:\s*([A-Za-z]+)\s*$", line)
-        if m_status and current_id:
-            claims[current_id] = m_status.group(1)
-            current_id = None
-
+        claim_id = item.get("claim_id")
+        status = item.get("status")
+        if isinstance(claim_id, str) and isinstance(status, str):
+            claims[claim_id] = status
     return claims
 
 
 def parse_event_log(path: Path) -> dict[str, list[dict[str, str]]]:
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
     grouped: dict[str, list[dict[str, str]]] = defaultdict(list)
-    cur: dict[str, str] | None = None
-
-    def flush() -> None:
-        if cur and "claim_id" in cur:
-            grouped[cur["claim_id"]].append(cur.copy())
-
-    for raw in path.read_text(encoding="utf-8").splitlines():
-        line = raw.rstrip()
-        if re.match(r"^\s*-\s*event_id:\s*", line):
-            flush()
-            cur = {}
-
-        if cur is None:
+    for item in data.get("events", []):
+        if not isinstance(item, dict):
             continue
-
-        m = re.match(r"^\s*([a-zA-Z_]+):\s*(.*?)\s*$", line)
-        if not m:
+        claim_id = item.get("claim_id")
+        if not isinstance(claim_id, str):
             continue
-
-        key, val = m.group(1), m.group(2)
-        if val.startswith('"') and val.endswith('"'):
-            val = val[1:-1]
-        cur[key] = val
-
-    flush()
+        event: dict[str, str] = {}
+        for key in ("event_id", "event_type", "from_status", "to_status", "timestamp"):
+            val = item.get(key)
+            if isinstance(val, str):
+                event[key] = val
+        grouped[claim_id].append(event)
     return grouped
 
 

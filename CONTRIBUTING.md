@@ -17,6 +17,7 @@
 For FROR claim-status integrity checks, install repository hooks once:
 
 ```bash
+python3 -m pip install --user PyYAML
 bash scripts/install-git-hooks.sh
 ```
 

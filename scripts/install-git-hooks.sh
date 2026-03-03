@@ -12,6 +12,12 @@ fi
 chmod +x "$hooks_path/pre-commit" "$hooks_path/commit-msg" "$hooks_path/pre-push"
 git -C "$repo_root" config core.hooksPath .githooks
 
+if ! python3 -c "import yaml" >/dev/null 2>&1; then
+  echo "Missing dependency: PyYAML"
+  echo "Install it with: python3 -m pip install --user PyYAML"
+  exit 1
+fi
+
 echo "Installed git hooks via core.hooksPath=.githooks"
 echo "Hooks:"
 echo "  - pre-commit"

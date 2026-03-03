@@ -42,6 +42,9 @@
 - совпадение итогового статуса из журнала с `claims_registry.yaml`;
 - отсутствие "лишних" claim в журнале.
 
+Требование:
+- установлен `PyYAML` в локальной среде `python3`.
+
 ## 3. Каноническая шкала статусов
 
 Статусы:
@@ -71,6 +74,7 @@
 
 ```bash
 cd fcdm-core
+python3 -m pip install --user PyYAML
 bash scripts/install-git-hooks.sh
 ```
 

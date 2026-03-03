@@ -9,3 +9,5 @@
 Полезные материалы:
 - FROR architecture: `theory/fror/FROR_architecture_v2.md`
 - FROR claims workflow (registry + event log + git hooks): `theory/fror/FROR_claims_git_workflow.md`
+
+Примечание: для FROR claim-checker и git hooks нужен `PyYAML` (`python3 -m pip install --user PyYAML`).
