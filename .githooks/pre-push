@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+repo_root="$(git rev-parse --show-toplevel)"
+checker="$repo_root/theory/fror/check_claim_status_transitions.py"
+
+if [[ -f "$checker" ]]; then
+  echo "[pre-push] FROR claim status transition check..."
+  python3 "$checker" \
+    --registry "$repo_root/theory/fror/claims_registry.yaml" \
+    --events "$repo_root/theory/fror/claim_event_log.yaml"
+fi

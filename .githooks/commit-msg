@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+msg_file="${1:?commit message file is required}"
+repo_root="$(git rev-parse --show-toplevel)"
+
+changed_files="$(git diff --cached --name-only)"
+needs_claim_tag=0
+
+if grep -Eq '^theory/fror/(claims_registry\.yaml|claim_event_log\.yaml)$' <<<"$changed_files"; then
+  needs_claim_tag=1
+fi
+
+if [[ "$needs_claim_tag" -eq 0 ]]; then
+  exit 0
+fi
+
+msg="$(cat "$msg_file")"
+
+if ! grep -Eq 'claim:[[:space:]]*FROR-CLM-[0-9]{3}' <<<"$msg"; then
+  cat >&2 <<'EOF'
+[commit-msg] ERROR:
+  This commit modifies theory/fror/claims_registry.yaml or theory/fror/claim_event_log.yaml.
+  Commit message must include at least one marker like:
+    claim: FROR-CLM-001
+EOF
+  exit 1
+fi

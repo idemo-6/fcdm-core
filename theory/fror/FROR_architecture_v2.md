@@ -38,6 +38,7 @@
 - [Claim-Maturity-Profile](../cdm/Specifications/Claim-Maturity-Profile.md)
 - [claims_registry](./claims_registry.yaml)
 - [claim_event_log](./claim_event_log.yaml)
+- [FROR_claims_git_workflow](./FROR_claims_git_workflow.md)
 
 Что хранится:
 - инварианты FROR;
