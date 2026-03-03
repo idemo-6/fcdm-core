@@ -24,10 +24,11 @@ citekey: cdm_claim_maturity_profile_ru_2026
 
 ## 2. Нормативная база
 
+- [MMCF Versioning Canonical](../../../../mmcf-docs/methodology/Versioning-Canonical.md)
+- [MMCF Claim Maturity Canonical](../../../../mmcf-docs/methodology/Claim-Maturity-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
 - [[fcdm-core/theory/fror/FROR_architecture_v2|FROR Architecture V2]]
-- [MMCF Claim Maturity Canonical](../../../../mmcf-docs/methodology/Claim-Maturity-Canonical.md)
 
 ---
 

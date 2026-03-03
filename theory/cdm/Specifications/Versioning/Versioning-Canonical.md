@@ -1,30 +1,32 @@
 ---
-title: "Спецификация: Versioning (каноническая)"
+title: "CDM Profile: Versioning (state-derived)"
 date: 2026-03-01
-tags: [CDM, versioning, canonical, lifecycle, changeflow]
-citekey: cdm_versioning_canonical_ru_2026
+tags: [CDM, versioning, profile, lifecycle, changeflow]
+citekey: cdm_versioning_profile_ru_2026
 ---
 
-# Спецификация: Versioning (каноническая)
+# CDM Profile: Versioning (state-derived)
 
-> Каноническое versioning в CDM является **state-derived**, а не manual-tagged.
+> Документ задает **CDM-профиль применения** канона versioning из MMCF.
 
 ---
 
-## 1. Область определения
+## 1. Область определения (профиль CDM)
 
-Документ задает каноническую схему версионирования сущностей CDM:
+Документ задает профильную схему версионирования сущностей CDM:
 
 - для документов (`doc:*`);
 - для систем (`sys:*`);
 - для любых доменных сущностей, проходящих `LifeCycle` и `ChangeFlow`.
 
-Версия вычисляется как функция подтвержденных фазовых переходов и не задается вручную.
+Версия вычисляется как функция подтвержденных фазовых переходов и не
+задается вручную.
 
 ---
 
 ## 2. Нормативные ссылки
 
+- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/LifeCycle-6_v2|LifeCycle-6]]
 - [[fcdm-core/theory/cdm/Specifications/ChangeFlow-6_v3|ChangeFlow-6]]
 - [[fcdm-core/theory/cdm/Specifications/PhaseTransition_Specifications/PhaseTransition_Overview|PhaseTransition Overview]]
@@ -137,7 +139,7 @@ citekey: cdm_versioning_canonical_ru_2026
 
 `SemVer` допускается как внешний release-label.
 
-Каноническое CDM-versioning:
+Профильное CDM-versioning:
 
 - не заменяется `SemVer`;
 - описывает состояние сущности во времени (`LC + CF`);

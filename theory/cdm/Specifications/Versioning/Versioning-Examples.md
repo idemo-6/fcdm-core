@@ -1,14 +1,15 @@
 ---
-title: "Examples: Canonical Versioning (document, deal, software)"
+title: "Examples: CDM Versioning Profile (document, deal, software)"
 date: 2026-03-01
 tags: [CDM, versioning, examples, document, deal, software]
-citekey: cdm_versioning_examples_ru_2026
+citekey: cdm_versioning_profile_examples_ru_2026
 ---
 
-# Examples: Canonical Versioning
+# Examples: CDM Versioning Profile
 
 Нормативная база:
 
+- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
 
@@ -96,4 +97,3 @@ citekey: cdm_versioning_examples_ru_2026
 
 3. Смена `EntityId` при той же сущности:
 - невалидно, потому что нарушена идентичность.
-

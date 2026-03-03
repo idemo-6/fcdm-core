@@ -1,11 +1,11 @@
 ---
-title: "Policy: Version Derivation from Event Log"
+title: "CDM Policy: Version Derivation from Event Log"
 date: 2026-03-01
-tags: [CDM, versioning, policy, event-log, derivation]
-citekey: cdm_version_derivation_policy_ru_2026
+tags: [CDM, versioning, profile-policy, event-log, derivation]
+citekey: cdm_version_derivation_profile_policy_ru_2026
 ---
 
-# Policy: Version Derivation from Event Log
+# CDM Policy: Version Derivation from Event Log
 
 ## 1. Назначение
 
@@ -17,6 +17,7 @@ citekey: cdm_version_derivation_policy_ru_2026
 
 Нормативная база:
 
+- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
 
 ---
@@ -123,4 +124,3 @@ derive(entity_id, log):
 - `replay_plan` (как восстановить состояние из журнала).
 
 Override не отменяет требование последующей нормализации и re-derivation.
-
