@@ -1,6 +1,7 @@
 # **0) Общие измерители (для обоих классов)**
 
 ## Связанные заметки
+- [[FROR_architecture_v2]]
 - [[FROR_GRAPH]]
 - [[FROR_SLOT_FORM]]
 - [[FROR_ds3_attractor]]

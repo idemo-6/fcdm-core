@@ -8,12 +8,13 @@ title: "FROR DomainLexicon: доменно-специфическая интер
 # FROR DomainLexicon: доменно-специфическая интерпретация инвариантов
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_normalizations_invariants]]
-- [[FROR_3plus1_phase]]
-- [[FROR_SLOT]]
-- [[FROR_class_measurement]]
-- [[FROR_CDM_bridge]]
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
 
 ------------------------------------------------------------------------
 
@@ -81,7 +82,7 @@ FROR-объекта.
 ### V4. Независимость инвариантов
 
 Смена терминов не должна менять:
-- I1-I6 из [[FROR_normalizations_invariants]];
+- I1-I6 из [FROR_normalizations_invariants](./FROR_normalizations_invariants.md);
 - алгоритм выделения `G⁰`;
 - метод оценки `d_s`;
 - критерии `SLOT`.
@@ -117,18 +118,22 @@ observables:
 
 ## 6. Пакет доменных профилей
 
-- [[FROR-Domain-Computing]]
-- [[FROR-Domain-Physics]]
-- [[FROR-Domain-Quantum]]
-- [[FROR-Domain-Biology]]
-- [[FROR-Domain-SocioEconomic]]
+- [FROR-Domain-Computing](./DomainMapping/fror/FROR-Domain-Computing.md)
+- [FROR-Domain-Physics](./DomainMapping/fror/FROR-Domain-Physics.md)
+- [FROR-Domain-Quantum](./DomainMapping/fror/FROR-Domain-Quantum.md)
+- [FROR-Domain-Biology](./DomainMapping/fror/FROR-Domain-Biology.md)
+- [FROR-Domain-SocioEconomic](./DomainMapping/fror/FROR-Domain-SocioEconomic.md)
 
 ------------------------------------------------------------------------
 
 ## 7. Принцип интерпретации необратимости
 
+Каноническая формулировка задаётся инвариантами I3--I4 в
+[FROR_normalizations_invariants](./FROR_normalizations_invariants.md).
+
 Во всех доменах сохраняется одно и то же:
 - обратная динамика не запрещена логически/физически;
-- при конечных ресурсах точная инверсия обычно экономически нереализуема;
+- при конечных ресурсах точная инверсия обычно вычислительно-энергетически
+  нереализуема (эффективная необратимость);
 - поэтому практический rollback реализуется как новый согласованный переход
   (компенсация), а не как полное восстановление истории.

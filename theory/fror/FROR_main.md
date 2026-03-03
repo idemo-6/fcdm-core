@@ -3,12 +3,13 @@
 (домен-независимая формулировка)
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_resource_layer]]
-- [[FROR_3plus1_phase]]
-- [[FROR_SLOT]]
-- [[FROR_normalizations_invariants]]
-- [[FROR_CDM_bridge]]
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_resource_layer](./FROR_resource_layer.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
+- [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
 
 ------------------------------------------------------------------------
 
@@ -186,6 +187,10 @@ M_min = ⌈log₂3⌉ = 2 бита
 
 которая интерпретируется как накопленная цена изменений (стрела
 времени).
+
+Это внутреннее время процесса (счетчик реальных изменений), а не
+обязательно внешнее календарное время: при отсутствии изменений `τ` не
+растет, даже если калибровочное время наблюдателя увеличивается.
 
 ------------------------------------------------------------------------
 

@@ -3,17 +3,27 @@
 (методологический документ)
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_resource_layer]]
-- [[FROR_main]]
-- [[FROR_3plus1_phase]]
-- [[FROR_SLOT]]
-- [[FROR_SLOT_FORM]]
-- [[FROR_ds3_attractor]]
-- [[FROR_class_measurement]]
-- [[FROR_GRAPH]]
-- [[FROR_DomainLexicon]]
-- [[FROR_CDM_bridge]]
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_resource_layer](./FROR_resource_layer.md)
+- [FROR_main](./FROR_main.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_GRAPH](./FROR_GRAPH.md)
+- [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
+- [FROR_thermo_profile](./FROR_thermo_profile.md)
+- [FROR_electro_profile](./FROR_electro_profile.md)
+- [FROR_relativity_profile](./FROR_relativity_profile.md)
+- [FROR_hilbert_profile](./FROR_hilbert_profile.md)
+- [FROR_sm_profile](./FROR_sm_profile.md)
+- [FROR_schrodinger_profile](./FROR_schrodinger_profile.md)
+- [FROR_gravity_profile](./FROR_gravity_profile.md)
+- [FROR_light_speed_profile](./FROR_light_speed_profile.md)
+- [FROR_DomainLexicon](./FROR_DomainLexicon.md)
+- [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
 
 ------------------------------------------------------------------------
 
@@ -78,7 +88,18 @@ FROR задаётся пятёркой объектов:
 где σ_t = F(ω_t).
 
 τ монотонно неубывает и не имеет направлений (скаляр бухгалтерии
-необратимости).
+необратимости). В FROR это операционное "время цены": направление
+наблюдаемой эволюции задаётся ростом τ в классе физически реализуемых
+траекторий при конечных ресурсах фиксации/восстановления.
+
+Важно различать два времени:
+- `τ` --- внутреннее (операционное) время процесса, считающее реальные
+  изменения/фиксации;
+- `t_cal` --- внешнее калибровочное время (часы/календарь), используемое
+  для синхронизации наблюдателей.
+
+FROR не отождествляет `τ` и `t_cal`: при отсутствии изменений `τ` не
+растет, даже если `t_cal` увеличивается.
 
 ### I4. Редукция альтернатив и структурная необратимость
 
@@ -89,6 +110,8 @@ FROR задаётся пятёркой объектов:
 
 Важно: обратная динамика не запрещена физически, но при конечных ресурсах
 обычно становится вычислительно-энергетически (экономически) нереализуемой.
+Поэтому необратимость в FROR трактуется как эффективная (ресурсная), а не
+как абсолютный логический запрет обратного хода.
 
 ### I5. Геометрия «пространства» возникает из нулевого подграфа
 
