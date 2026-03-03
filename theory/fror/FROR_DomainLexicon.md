@@ -15,6 +15,15 @@ title: "FROR DomainLexicon: доменно-специфическая интер
 - [FROR_SLOT](./FROR_SLOT.md)
 - [FROR_class_measurement](./FROR_class_measurement.md)
 - [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
+- [claims_registry](./claims_registry.yaml)
+
+------------------------------------------------------------------------
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-008 | Protocol | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

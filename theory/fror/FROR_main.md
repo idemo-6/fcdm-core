@@ -10,6 +10,18 @@
 - [FROR_SLOT](./FROR_SLOT.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
+- [claims_registry](./claims_registry.yaml)
+
+------------------------------------------------------------------------
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-001 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-002 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-003 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-008 | Protocol | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

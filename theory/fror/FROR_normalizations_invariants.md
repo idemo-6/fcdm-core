@@ -24,6 +24,16 @@
 - [FROR_light_speed_profile](./FROR_light_speed_profile.md)
 - [FROR_DomainLexicon](./FROR_DomainLexicon.md)
 - [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
+- [claims_registry](./claims_registry.yaml)
+
+------------------------------------------------------------------------
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-004 | Protocol | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-008 | Protocol | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

@@ -18,6 +18,15 @@
 - [[FROR_SLOT_FORM]]
 - [[FROR_class_measurement]]
 - [[FROR_normalizations_invariants]]
+- [claims_registry](./claims_registry.yaml)
+
+------------------------------------------------------------------------
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-007 | Conjecture | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

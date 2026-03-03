@@ -8,6 +8,15 @@
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_main](./FROR_main.md)
 - [FROR_SLOT](./FROR_SLOT.md)
+- [claims_registry](./claims_registry.yaml)
+
+------------------------------------------------------------------------
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-005 | Protocol | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

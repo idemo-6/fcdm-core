@@ -1,0 +1,136 @@
+schema: fror-claim-status-v1
+statuses:
+  - Conjecture
+  - Protocol
+  - Validated
+  - Core
+
+claims:
+  - claim_id: FROR-CLM-001
+    title: "Tri-class representation threshold"
+    owner_doc: "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+    status: Core
+    statement: "Для трихотомии D={-,0,+} необходимо K(R)>=3 (в канонической дискретной записи R>=3)."
+    scope: "Canonical FROR"
+    assumptions:
+      - "A1..A5"
+    falsification:
+      - "Внутренняя логическая несовместимость аксиом A1..A5"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+      - "fcdm-core/theory/fror/FROR_main.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-002
+    title: "Effective irreversibility from distinguishability deficit"
+    owner_doc: "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+    status: Core
+    statement: "При N_t>K(R_t) и платной фиксации точный rollback требует доп. ресурса, монотонного по DeltaI_miss."
+    scope: "Canonical FROR"
+    assumptions:
+      - "A2"
+      - "A4"
+      - "A5"
+    falsification:
+      - "Построение точного rollback без доп. ресурса при устойчивом DeltaI_miss>0"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-003
+    title: "Fixation time tau and background dissipation D are distinct"
+    owner_doc: "fcdm-core/theory/fror/FROR_main.md"
+    status: Core
+    statement: "tau учитывает c_fix, а D учитывает c_bg; при dir=0 возможен c_bg>0 без роста tau."
+    scope: "Canonical FROR"
+    assumptions:
+      - "D4"
+      - "D4b"
+      - "D5"
+      - "D5b"
+    falsification:
+      - "Невозможность согласованно определить c_fix и c_bg как независимые компоненты в каноне"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+      - "fcdm-core/theory/fror/FROR_main.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-004
+    title: "Normalization invariants C1..C5 are sufficient anti-hack constraints"
+    owner_doc: "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    status: Protocol
+    statement: "Корректная FROR-нормализация должна проходить C1..C5 и явные контроли воспроизводимости."
+    scope: "Criteria layer"
+    assumptions:
+      - "Operationalized C1..C5"
+    falsification:
+      - "Устойчивая подгонка результата при формальном выполнении C1..C5"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+      - "fcdm-core/theory/fror/FROR_class_measurement.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-005
+    title: "Memory threshold for tri-class asymmetry"
+    owner_doc: "fcdm-core/theory/fror/FROR_symmetry_memory_threshold.md"
+    status: Protocol
+    statement: "Для нетривиальной трихотомии первый рабочий порог памяти наблюдателя M_O>=2."
+    scope: "Computing-oriented FROR profile"
+    assumptions:
+      - "Finite automaton observer"
+      - "No external oracle/memory"
+    falsification:
+      - "Устойчивое трихотомное различение при M_O=1 без внешнего ресурса"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_symmetry_memory_threshold.md"
+      - "fcdm-core/theory/fror/FROR_class_measurement.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-006
+    title: "3+1 as stable fixation phase via ds(G0)~3"
+    owner_doc: "fcdm-core/theory/fror/FROR_3plus1_phase.md"
+    status: Conjecture
+    statement: "При широком классе FROR-систем спектральная размерность нулевого подграфа стремится к ~3 как устойчивый инвариант."
+    scope: "FROR 3+1 hypothesis"
+    assumptions:
+      - "Well-defined G0 and ds estimator"
+      - "Stable coarse-graining plateaus"
+    falsification:
+      - "Отсутствие устойчивого режима ds~3 в независимых контрольных классах графов"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_3plus1_phase.md"
+      - "fcdm-core/theory/fror/FROR_class_measurement.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-007
+    title: "SLOT stability peak near ds~3"
+    owner_doc: "fcdm-core/theory/fror/FROR_SLOT.md"
+    status: Conjecture
+    statement: "Максимальная структурная устойчивость локальных аттракторов наблюдается вблизи ds~3."
+    scope: "SLOT hypothesis"
+    assumptions:
+      - "Conductance+survival detector validity"
+    falsification:
+      - "Систематическое отсутствие максимума вблизи ds~3 на независимых генераторах"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_SLOT.md"
+      - "fcdm-core/theory/fror/FROR_class_measurement.md"
+    updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-008
+    title: "Cross-domain portability of FROR patterns"
+    owner_doc: "fcdm-core/theory/fror/FROR_DomainLexicon.md"
+    status: Protocol
+    statement: "Инварианты FROR сохраняются при смене домена при корректном отображении Core->Terms_D."
+    scope: "Domain mapping layer"
+    assumptions:
+      - "V1..V4 of DomainLexicon"
+    falsification:
+      - "Конфликт инвариантов I1..I6 при корректном V1..V4 отображении"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_DomainLexicon.md"
+      - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-Computing.md"
+      - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-Physics.md"
+    updated_at: "2026-03-03"

@@ -36,6 +36,7 @@
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
 - [Claim-Maturity-Profile](../cdm/Specifications/Claim-Maturity-Profile.md)
+- [claims_registry](./claims_registry.yaml)
 
 Что хранится:
 - инварианты FROR;

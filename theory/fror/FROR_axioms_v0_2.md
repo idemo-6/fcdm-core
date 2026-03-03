@@ -16,8 +16,17 @@
 - [[FROR_ds3_attractor]]
 - [[FROR_normalizations_invariants]]
 - [[FROR_symmetry_memory_threshold]]
+- [claims_registry](./claims_registry.yaml)
 
 ---
+
+## Claim Statuses
+
+| claim_id | status | registry |
+|---|---|---|
+| FROR-CLM-001 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-002 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-003 | Core | [claims_registry](./claims_registry.yaml) |
 
 ## 0) Базовые объекты и обозначения
 
