@@ -35,11 +35,13 @@
 Файлы:
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
+- [Claim-Maturity-Profile](../cdm/Specifications/Claim-Maturity-Profile.md)
 
 Что хранится:
 - инварианты FROR;
 - требования к корректной нормализации (`C1..C5`);
-- критерии фальсификации и пороговые условия (например, память/симметрия).
+- критерии фальсификации и пороговые условия (например, память/симметрия);
+- правила зрелости утверждений (`Conjecture/Protocol/Validated/Core`).
 
 Правило:
 - если утверждение не проходит по критериям этого слоя, оно не считается

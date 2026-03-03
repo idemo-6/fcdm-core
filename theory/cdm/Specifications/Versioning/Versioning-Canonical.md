@@ -31,6 +31,7 @@ citekey: cdm_versioning_canonical_ru_2026
 - [[fcdm-core/theory/cdm/Specifications/PhaseTransition_Specifications/PhaseTransition-LC|PhaseTransition-LC]]
 - [[fcdm-core/theory/cdm/Specifications/PhaseTransition_Specifications/PhaseTransition-CF|PhaseTransition-CF]]
 - [[fcdm-core/theory/cdm/Specifications/System/Identity-Canonical|Identity Canonical]]
+- [[fcdm-core/theory/cdm/Specifications/Claim-Maturity-Profile|Claim-Maturity-Profile]]
 
 ---
 
@@ -144,6 +145,20 @@ citekey: cdm_versioning_canonical_ru_2026
 
 ---
 
+## 7b. Связь со статусами зрелости утверждений
+
+`ClaimStatus` (`Conjecture/Protocol/Validated/Core`) не является частью
+`VersionState` и не включается в `v.<inc>.<lc>.<cf>.<cfp>`.
+
+Иными словами:
+- `EntityVersion` отвечает на вопрос "в каком процессном состоянии сущность";
+- `ClaimStatus` отвечает на вопрос "какова зрелость конкретного тезиса".
+
+Правила и гейты claim-статусов задаются в:
+- [[fcdm-core/theory/cdm/Specifications/Claim-Maturity-Profile|Claim-Maturity-Profile]]
+
+---
+
 ## 8. Минимальный машинный контракт
 
 Для вычисления версии необходимы события:
@@ -159,4 +174,3 @@ citekey: cdm_versioning_canonical_ru_2026
 Подробная процедура вычисления:
 
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
-

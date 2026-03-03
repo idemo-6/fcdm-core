@@ -41,3 +41,4 @@ Applied Rule Profile: [[fcdm-core/theory/cdm/Specifications/AppliedRules/RLC-CC-
 Versioning Canonical: [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
 Version Derivation Policy: [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
 Versioning Examples: [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Examples|Versioning-Examples]]
+Claim Maturity Profile: [[fcdm-core/theory/cdm/Specifications/Claim-Maturity-Profile|Claim-Maturity-Profile]]
