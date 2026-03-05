@@ -180,6 +180,14 @@ CF5 является единственной физической точкой 
 
 `Experience = 0 <=> not Applicable(Intent, C_active, LC_phase)`.
 
+Гейтинг реализации:
+
+- проверка `Applicable` выполняется в `PT(CF4->CF5)`;
+- при `Applicable=false` физический commit (`CF5`) запрещен и выполняется
+  `PT(CF4->CF6:inapplicable)` с фиксацией `Experience=0`;
+- при `Applicable=true` допускается `CF5`, после чего в `CF6` фиксируется
+  `Experience in {+1,-1}`.
+
 `Intent` является семантической единицей, реализованной в конкретном `ChangeFlow`.
 
 Формально:
@@ -268,7 +276,8 @@ CF5 является единственной физической точкой 
 
 1. Ровно один root intent block.
 2. Ровно один collect/declaration block `@(... )`.
-3. Допустим collect-only intent (без runtime фаз).
+3. `collect-only` сценарий не считается валидной реализацией `Intent` в
+   `ChangeFlow`.
 4. `CF1` репрезентируется collect/declaration блоком; `CF2..CF6` — runtime phase blocks.
 
 Профильные ограничения выполнения:
@@ -276,7 +285,12 @@ CF5 является единственной физической точкой 
 - планирование `fn.plan_*` выполняется только в `@(...).collect`;
 - внешняя материализация контекстов только через `pt.*` в PT hook/effects;
 - доменная мутация только через `imp.*` в `CF5`;
-- при делегированном core-потоке с `CF5` может требоваться `attest` по LC-политике.
+- при делегированном `CF5-only` может требоваться `attest` по LC-политике;
+- для `CF5-only` локальный `CF5` допускается только при валидном `attest`,
+  содержащем минимум: `intent_id`, `carrier_system_id`, `upstream_flow_id`,
+  `context_snapshot`, `lc_phase_snapshot`, `applicable=true`, `authority_id`,
+  `policy_version`, `scope`, `expires_at`, `issuer_signature`,
+  `local_accept_signature`.
 
 Семантика результата `evaluate` совместима с каноном:
 

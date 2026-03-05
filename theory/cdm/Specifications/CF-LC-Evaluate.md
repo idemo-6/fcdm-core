@@ -64,7 +64,9 @@ LC_state(t+1) = Evaluate(Result_CF, LC_state(t))
 
 где:
 
-- Result_CF — результат CF5,
+- Result_CF — результат завершённой ветки ChangeFlow:
+  - `Result=0` при `PT(CF4->CF6:inapplicable)` (без `CF5`);
+  - `Result in {+1,-1}` после `CF5`,
 - LC_state — текущее состояние LifeCycle.
 
 ---
@@ -83,6 +85,10 @@ Evaluate:
 
 CF5 — физическое изменение  
 CF6 — семантическая фиксация изменения
+
+Примечание:
+если `Applicable=false`, физический commit не выполняется, и `CF6` фиксирует
+`Result=0` по ветке `PT(CF4->CF6:inapplicable)`.
 
 ---
 
