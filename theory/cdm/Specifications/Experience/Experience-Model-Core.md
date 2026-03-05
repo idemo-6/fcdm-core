@@ -90,17 +90,23 @@ citekey: cdm_experience_model_core_ru_2026
 
 ## 6. Связь с DegradeScore (модельный уровень)
 
+Согласованная универсальная рамка агрегации:
+[[fcdm-core/theory/cdm/Specifications/Aggregate-Metrics-Model-Core|Aggregate-Metrics-Model-Core]].
+
 Модельно допускается:
 
-`Delta_DS = f_exp(Result, W_plus, W_zero, W_minus) + epsilon_drift`.
+`Delta_DS = f_exp(op_signal, W_plus, W_zero, W_minus) + epsilon_drift`.
 
 Простейший линейный шаблон:
-- `+1 -> Delta_DS = -k`,
-- `0 -> Delta_DS = 0`,
-- `-1 -> Delta_DS = +k`,
+- `op_signal=+1 -> Delta_DS = -k`,
+- `op_signal=0 -> Delta_DS = 0`,
+- `op_signal=-1 -> Delta_DS = +k`,
 - `+ epsilon_drift` как независимый дрейф.
 
 Численные параметры и нелинейности не являются каноническими и задаются доменом.
+
+`op_signal` является аналитическим сигналом и не заменяет runtime-семантику
+`Result in {+1,0,-1}` (`0` зарезервирован под `ApplicabilityFailure`).
 
 ---
 
@@ -111,3 +117,61 @@ citekey: cdm_experience_model_core_ru_2026
 3. Все проверки применимости используют сигнатуру:
 `Applicable(Intent, C_active, LC_phase)`.
 4. Индексация опыта обязана учитывать `lc_phase` (`ExpKey`).
+
+---
+
+## 8. Индекс освоенности операторов `E_conf` (для downstream-моделей)
+
+Назначение:
+- получить нормированный индекс подтвержденной освоенности операторного набора
+  в текущем `C_active` и `LC_phase`;
+- использовать индекс в моделях выбора/сомнения (например, `Doubt_v2`).
+
+### 8.1 Определение выборки
+
+Пусть `R_set(C_active, LC_phase, H)` — релевантные записи опыта за окно `H`,
+отфильтрованные по:
+- совпадению `C_active`,
+- совпадению `LC_phase`,
+- пересечению по операторному набору `O_target`.
+
+### 8.2 Взвешенные счетчики
+
+Для каждой записи `r in R_set` задается вес:
+
+`w(r) = w_recency(r) * w_relevance(r) * w_reliability(r)`.
+
+Суммарные массы:
+- `P = sum_{r: Result=+1} w(r)`
+- `Z = sum_{r: Result=0} w(r)`
+- `N = sum_{r: Result=-1} w(r)`
+
+### 8.3 Базовая формула
+
+`E_conf = clamp((P + lambda * Z) / (P + Z + N + eps), 0, 1)`
+
+где:
+- `lambda in [0,1]` — частичный вклад `0` (неприменимость/неопределенность);
+- `eps > 0` — защита от деления на ноль.
+
+Интерпретация:
+- `E_conf -> 1`: операторный набор стабильно подтвержден опытом;
+- `E_conf -> 0`: набор слабо подтвержден или деградирующий.
+
+### 8.4 Политика по умолчанию
+
+Рекомендуемые стартовые параметры:
+- `lambda = 0.2` (слабый вклад `0`);
+- экспоненциальный `w_recency` по времени;
+- понижение `w_reliability` для записей без аттестации (если профиль аттестаций включен).
+
+---
+
+## 9. Связь с Doubt (model coupling)
+
+`E_conf` является downstream-входом для `Doubt_v2`:
+- при прочих равных рост `E_conf` снижает итоговый сигнал сомнения;
+- пересчет `E_conf` обязателен при смене `C_active` или `LC_phase`.
+
+Конкретная связь фиксируется в:
+`Specifications/System/Doubt-Model-Core`.

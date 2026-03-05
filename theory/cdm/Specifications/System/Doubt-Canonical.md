@@ -26,6 +26,7 @@ citekey: cdm_doubt_canonical_ru_2026
 - [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Canonical|Viewpoint-Canonical]]
 - [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Canonical|MetaChangeFlow-Canonical]]
 - [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Canonical|CreativeChangeFlow-Canonical]]
+- [[fcdm-core/theory/cdm/Specifications/Experience/Experience-Canonical|Experience-Canonical]]
 
 ---
 
@@ -37,7 +38,8 @@ citekey: cdm_doubt_canonical_ru_2026
 
 1. количества/значимости доступных альтернатив;
 2. операторной емкости системы для их обработки;
-3. цены ошибки в данном контексте.
+3. цены ошибки в данном контексте;
+4. локально подтвержденного опыта применения операторов.
 
 ---
 
@@ -61,6 +63,7 @@ citekey: cdm_doubt_canonical_ru_2026
 - доменные режимы эскалации.
 
 Эти элементы определяются в профильных документах.
+Выбор расчетного профиля (`v1` simplified baseline или `v2` advanced/non-monotonic) задается в [[fcdm-core/theory/cdm/Specifications/System/Doubt-Model-Core|Doubt-Model-Core]] и доменных профилях.
 
 ---
 

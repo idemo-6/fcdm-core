@@ -1,6 +1,11 @@
 # CDM Index
 
 Governance Index: [[fcdm-core/theory/cdm/Specifications/Governance/Canonical-DSL-Governance|Canonical-DSL-Governance]]
+DegradeVector Canonical: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Canonical|DegradeVector-Canonical]]
+Aggregate Metrics Model Core: [[fcdm-core/theory/cdm/Specifications/Aggregate-Metrics-Model-Core|Aggregate-Metrics-Model-Core]]
+DegradeVector Machine Contract: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Machine-Contract|DegradeVector-Machine-Contract]]
+DegradeVector Domain Template: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Domain-Template|DegradeVector-Domain-Template]]
+DegradeVector Conformance (minimal): [[fcdm-core/theory/cdm/Specifications/DegradeVector-Conformance-Minimal|DegradeVector-Conformance-Minimal]]
 Experience Package: [[fcdm-core/theory/cdm/Specifications/Experience/Experience-Canonical|Experience-Canonical]]
 ChangeOperators Canonical: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Canonical|ChangeOperators-Canonical]]
 ChangeOperators Profile: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Access-Profile|ChangeOperators-Access-Profile]]
@@ -33,6 +38,7 @@ Viewpoint Evolution Model Core: [[fcdm-core/theory/cdm/Specifications/System/Vie
 Viewpoint/MetaChangeFlow Examples: [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Examples|Viewpoint-Examples]]
 MetaChangeFlow Canonical: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Canonical|MetaChangeFlow-Canonical]]
 MetaChangeFlow Trigger Policy: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Trigger-Policy|MetaChangeFlow-Trigger-Policy]]
+MetaChangeFlow Model Core: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Model-Core|MetaChangeFlow-Model-Core]]
 Creative ChangeFlow Canonical: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Canonical|CreativeChangeFlow-Canonical]]
 Creative ChangeFlow Model Core: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Model-Core|CreativeChangeFlow-Model-Core]]
 Creative ChangeFlow Examples: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Examples|CreativeChangeFlow-Examples]]

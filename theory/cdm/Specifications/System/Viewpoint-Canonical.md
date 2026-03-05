@@ -61,5 +61,6 @@ citekey: cdm_viewpoint_canonical_ru_2026
 - Модель эволюции: [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Evolution-Model-Core|Viewpoint-Evolution-Model-Core]]
 - Канон MetaChangeFlow: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Canonical|MetaChangeFlow-Canonical]]
 - Trigger Policy: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Trigger-Policy|MetaChangeFlow-Trigger-Policy]]
+- MetaChangeFlow model: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Model-Core|MetaChangeFlow-Model-Core]]
 
 - Creative режим: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Canonical|CreativeChangeFlow-Canonical]]

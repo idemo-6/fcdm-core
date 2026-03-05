@@ -58,3 +58,4 @@ citekey: cdm_metachangeflow_canonical_ru_2026
 Нормативная policy:
 
 - [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Trigger-Policy|MetaChangeFlow-Trigger-Policy]]
+- [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Model-Core|MetaChangeFlow-Model-Core]]

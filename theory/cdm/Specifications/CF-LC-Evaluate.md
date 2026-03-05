@@ -32,7 +32,7 @@ citekey: cdm_cf_lc_evaluate_ru_2026
 
 - Спецификация ChangeFlow-6
 - Спецификация LifeCycle-6
-- Спецификация DegradeVector
+- [[fcdm-core/theory/cdm/Specifications/DegradeVector-Canonical|DegradeVector-Canonical]]
 - Спецификация Experience (каноническая)
 - [DomainLexicon](../DomainLexicon.md)
 

@@ -57,3 +57,22 @@ citekey: cdm_creative_changeflow_model_core_ru_2026
 - Нельзя бесконечно удерживать суперпозицию без phase-gate.
 - Нельзя подменять `decide` постоянным exploration.
 - Нельзя оценивать креативность только по `S` без `R/Result` и реализуемости.
+
+---
+
+## 6. Safety-hook (обязательный operational класс)
+
+Для любого профиля Creative ChangeFlow должны быть заданы:
+
+1. `max_decide_delay`
+- максимальная допустимая задержка коллапса в `decide`.
+
+2. `forced_collapse_trigger`
+- формализованный триггер принудительного перехода:
+  - либо в `decide`,
+  - либо в `MetaChangeFlow` (по policy).
+
+Минимальные допустимые trigger-сигналы:
+- превышение `max_decide_delay`;
+- `Doubt > theta_domain` на заданном интервале;
+- превышение ресурсных ограничений режима exploration.

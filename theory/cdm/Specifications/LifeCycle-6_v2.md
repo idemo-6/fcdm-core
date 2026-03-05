@@ -29,7 +29,7 @@ citekey: cdm_lifecycle6_canonical_ru_2026
 
 - [[DomainLexicon]]
 - Спецификация PhaseTransition
-- Спецификация DegradeVector
+- [[fcdm-core/theory/cdm/Specifications/DegradeVector-Canonical|DegradeVector-Canonical]]
 - Определения Система / Идентичность
 
 ---

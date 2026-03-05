@@ -17,6 +17,8 @@ citekey: cdm_mmcf_legacy_migration_map_ru_2026
 |---|---|---|
 | 2.2.2 Эволюция Viewpoint | `System/Viewpoint-Evolution-Model-Core.md` | integrated |
 | 2.2.10 MetaChangeFlow адаптации Viewpoint | `System/MetaChangeFlow-Canonical.md`, `System/MetaChangeFlow-Trigger-Policy.md` | integrated |
+| 2.2.11 Мета-процессы (MetaChangeFlow) | `System/MetaChangeFlow-Model-Core.md` | integrated |
+| 2.2.12 Агрегатные метрики (универсальная рамка) | `DegradeVector-Canonical.md`, `Aggregate-Metrics-Model-Core.md`, `DegradeVector-Machine-Contract.md`, `DegradeVector-Domain-Template.md`, `DegradeVector-Conformance-Minimal.md` | integrated |
 | 2.2.8 Интуиция как fast-path | `System/Viewpoint-Domain-Profiles/Viewpoint-Domain-Intuition-FastPath-Profile.md` | created |
 | 2.2.7 Эмоция как рефлекс | `System/Viewpoint-Domain-Profiles/Viewpoint-Domain-Emotion-Reflex-Profile.md` | created |
 | Пример 05: искусство (S/творчество) | `System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Art-Creativity-Profile.md` | created |
