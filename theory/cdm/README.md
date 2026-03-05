@@ -15,6 +15,7 @@ Operator Novelty Profile (optional): [[fcdm-core/theory/cdm/Specifications/Opera
 ChangeOperators Examples: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Examples|ChangeOperators-Examples]]
 Probability Canonical: [[fcdm-core/theory/cdm/Specifications/Operators/Probability-Embedded-Operator-Canonical|Probability-Embedded-Operator-Canonical]]
 Probability Decision Profile: [[fcdm-core/theory/cdm/Specifications/Operators/Probability-Decision-Profile|Probability-Decision-Profile]]
+ChangeFlow Execution Profile (ICSS, PT-gating, CF5-only attest): [[fcdm-core/theory/cdm/Specifications/ChangeFlow-6_v3|ChangeFlow-6]]
 System Canonical: [[fcdm-core/theory/cdm/Specifications/System/System-Canonical|System-Canonical]]
 Identity Canonical: [[fcdm-core/theory/cdm/Specifications/System/Identity-Canonical|Identity-Canonical]]
 Identity Profile: [[fcdm-core/theory/cdm/Specifications/System/Identity-Scoring-Profile|Identity-Scoring-Profile]]
