@@ -7,9 +7,9 @@ tags: [FROR, DomainLexicon, socioeconomics]
 # FROR в социально-экономическом домене
 
 Связанные канонические документы:
-- [[FROR_DomainLexicon]]
-- [[FROR_main]]
-- [[FROR_normalizations_invariants]]
+- [FROR_DomainLexicon](../../FROR_DomainLexicon.md)
+- [FROR_main](../../FROR_main.md)
+- [FROR_normalizations_invariants](../../FROR_normalizations_invariants.md)
 
 ## Отображение канона
 

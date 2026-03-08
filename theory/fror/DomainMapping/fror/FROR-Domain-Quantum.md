@@ -7,9 +7,9 @@ tags: [FROR, DomainLexicon, quantum]
 # FROR в квантовом домене
 
 Связанные канонические документы:
-- [[FROR_DomainLexicon]]
-- [[FROR_normalizations_invariants]]
-- [[FROR_SLOT]]
+- [FROR_DomainLexicon](../../FROR_DomainLexicon.md)
+- [FROR_normalizations_invariants](../../FROR_normalizations_invariants.md)
+- [FROR_SLOT](../../FROR_SLOT.md)
 
 ## Отображение канона
 

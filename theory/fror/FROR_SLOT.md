@@ -12,12 +12,12 @@
 ------------------------------------------------------------------------
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_3plus1_phase]]
-- [[FROR_ds3_attractor]]
-- [[FROR_SLOT_FORM]]
-- [[FROR_class_measurement]]
-- [[FROR_normalizations_invariants]]
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [claims_registry](./claims_registry.yaml)
 
 ------------------------------------------------------------------------

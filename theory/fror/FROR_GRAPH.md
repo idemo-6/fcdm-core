@@ -1,11 +1,11 @@
 # **Класс A: Иерархические/фрактальные графы с управляемой спектральной размерностью**
 
 ## Связанные заметки
-- [[FROR_class_measurement]]
-- [[FROR_SLOT_FORM]]
-- [[FROR_ds3_attractor]]
-- [[FROR_SLOT]]
-- [[FROR_normalizations_invariants]]
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ---
 

@@ -12,6 +12,17 @@ citekey: cdm_changeflow6_canonical_ru_2026
 
 ---
 
+## 0. Ultra-Short Canonical Form
+
+- `CF-6` — минимальный функциональный оператор адаптивной необратимой редукции.
+- Каноническая форма: `CF-6 = (collect, analyze, forecast, decide, implement, evaluate)`.
+- Ограничение применимости: `R < |Omega|`, редукция альтернатив выполняется итеративно.
+- `decide` (`CF4`) — селекционный tau-акт.
+- `CF6` — единственная точка влияния `CF -> LC`.
+- Полная формализация: [[fcdm-core/theory/cdm/Specifications/CDM-v2-Minimality-Canonical-Short|CDM-v2-Minimality-Canonical-Short]].
+
+---
+
 ## 1. Область определения
 
 Документ задаёт **ChangeFlow-6** как каноническую топологию атомарного изменения состояния системы.
@@ -39,6 +50,7 @@ ChangeFlow представляет собой минимально полный
 - Спецификация Context (каноническая)
 - Спецификация Experience (каноническая)
 - Governance: Canon <-> DSL Synchronization
+- [[fcdm-core/theory/cdm/Specifications/CDM-v2-Transition-Spec|CDM-v2-Transition-Spec]]
 
 ---
 
@@ -334,3 +346,22 @@ ChangeFlow-6 считается опровергнутым для классов
 
 - определить DomainLexicon
 - задать операторы наблюдения T1..T6
+
+---
+
+## 14. Переходный слой CDM v2
+
+Данная спецификация совместима с переходным слоем:
+[[fcdm-core/theory/cdm/Specifications/CDM-v2-Transition-Spec|CDM-v2-Transition-Spec]].
+
+Интеграционные правила:
+
+- `CF1..CF6` сохраняют канонический порядок и каузальность без изменений;
+- `CF4` трактуется как селекционный (tau) акт редукции альтернатив;
+- `CF6` остается единственной точкой влияния `CF -> LC`;
+- `PT`-gating (`Applicable`) и `CF5-only` контракт сохраняются как обязательные runtime-ограничения.
+
+Интерпретационный инвариант переходной фазы:
+
+- каждый завершенный `CF`-цикл должен уменьшать неопределенность в ожидаемом смысле (`Omega_after <= Omega_before`);
+- стратегическая цель управления формулируется как `min E[tau_future]`.

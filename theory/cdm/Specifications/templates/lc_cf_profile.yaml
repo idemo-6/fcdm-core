@@ -1,0 +1,98 @@
+# CDM v2 template: LC -> CF execution profile
+# Reference: CDM-v2-LC-CF-Mapping-Profile.md
+
+schema: cdm.v2.lc_cf_profile
+version: 1
+owner: "<team-or-system>"
+policy_ref: "<policy-doc-or-id>"
+
+profiles:
+  - phase: F1
+    R_phase: medium
+    tau_risk_max: low
+    priority:
+      CF1: high
+      CF2: high
+      CF3: normal
+      CF4: normal
+      CF5: low
+      CF6: high
+    exit_criteria:
+      ds_trend: decrease
+      eval_window: 5
+      additional: "exists=true and stable context capture"
+
+  - phase: F2
+    R_phase: high
+    tau_risk_max: medium
+    priority:
+      CF1: normal
+      CF2: high
+      CF3: high
+      CF4: high
+      CF5: normal
+      CF6: high
+    exit_criteria:
+      ds_trend: decrease
+      eval_window: 8
+      additional: "DS decreases on >= tau_phase_min"
+
+  - phase: F3
+    R_phase: medium
+    tau_risk_max: medium
+    priority:
+      CF1: normal
+      CF2: normal
+      CF3: high
+      CF4: high
+      CF5: normal
+      CF6: high
+    exit_criteria:
+      ds_trend: stable
+      eval_window: 10
+      additional: "DS <= DS_stable and stable eval"
+
+  - phase: F4
+    R_phase: high
+    tau_risk_max: low
+    priority:
+      CF1: high
+      CF2: high
+      CF3: normal
+      CF4: normal
+      CF5: low
+      CF6: high
+    exit_criteria:
+      ds_trend: unstable
+      eval_window: 6
+      additional: "growth of DS stabilized or reversed"
+
+  - phase: F5
+    R_phase: low
+    tau_risk_max: low
+    priority:
+      CF1: low
+      CF2: low
+      CF3: low
+      CF4: low
+      CF5: low
+      CF6: high
+    exit_criteria:
+      ds_trend: increase
+      eval_window: 3
+      additional: "irreversible condition fixed and closure path chosen"
+
+  - phase: F6
+    R_phase: low
+    tau_risk_max: low
+    priority:
+      CF1: low
+      CF2: low
+      CF3: low
+      CF4: low
+      CF5: low
+      CF6: high
+    exit_criteria:
+      ds_trend: stable
+      eval_window: 1
+      additional: "exists=false or Tag switched"

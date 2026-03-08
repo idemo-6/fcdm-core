@@ -74,7 +74,7 @@ claims:
 
   - claim_id: FROR-CLM-005
     title: "Memory threshold for tri-class asymmetry"
-    owner_doc: "fcdm-core/theory/fror/FROR_symmetry_memory_threshold.md"
+    owner_doc: "fcdm-core/theory/fror/FROR_distinguishability_resource_threshold.md"
     status: Protocol
     statement: "Для нетривиальной трихотомии первый рабочий порог памяти наблюдателя M_O>=2."
     scope: "Computing-oriented FROR profile"
@@ -84,7 +84,7 @@ claims:
     falsification:
       - "Устойчивое трихотомное различение при M_O=1 без внешнего ресурса"
     evidence_refs:
-      - "fcdm-core/theory/fror/FROR_symmetry_memory_threshold.md"
+      - "fcdm-core/theory/fror/FROR_distinguishability_resource_threshold.md"
       - "fcdm-core/theory/fror/FROR_class_measurement.md"
     updated_at: "2026-03-03"
 
@@ -134,3 +134,154 @@ claims:
       - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-Computing.md"
       - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-Physics.md"
     updated_at: "2026-03-03"
+
+  - claim_id: FROR-CLM-009
+    title: "Delayed commit reduces long-horizon tau under finite budget"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "При конечном бюджете и ненулевой цене ошибок политики delayed-commit снижают E[tau_long] относительно реактивного baseline."
+    scope: "Agency profile layer"
+    assumptions:
+      - "Finite budget B"
+      - "Nonzero error/rollback cost"
+      - "Comparable environment dynamics across policies"
+    falsification:
+      - "Устойчивые классы сред, где reactive policy систематически лучше delayed-commit по E[tau_long]"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-010
+    title: "Higher future weight increases tau-system minimization strategies"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "В повторяющихся мультиагентных играх рост gamma (значимости будущего) увеличивает долю стратегий, минимизирующих E[tau_long_sys]."
+    scope: "Agency multi-agent layer"
+    assumptions:
+      - "Repeated interaction setting"
+      - "Observable external costs C_ext"
+      - "Finite agent resources"
+    falsification:
+      - "Отсутствие роста кооперативных/просоциальных стратегий при gamma -> 1 в устойчивых сериях"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-011
+    title: "Money is a noisy proxy for tau_social"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "Денежные метрики частично аппроксимируют tau_social, но дают систематическую ошибку при сильных внешних эффектах и информационной асимметрии."
+    scope: "Socio-economic agency mapping"
+    assumptions:
+      - "Defined operational tau_social metric"
+      - "Measurable externalities and asymmetry regimes"
+    falsification:
+      - "Стабильное отсутствие связи money-metrics и tau_social даже при низких внешних эффектах"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+      - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-SocioEconomic.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-012
+    title: "Observer-level entropy arrow from finite distinguishability"
+    owner_doc: "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    status: Conjecture
+    statement: "Для наблюдателей с конечной различимостью при устойчивом N_t>K(R_t) возникает наблюдаемая энтропийная стрелка даже при обратимой микродинамике."
+    scope: "Observer thermodynamics profile"
+    assumptions:
+      - "Microscopic reversible dynamics class is explicitly defined"
+      - "Operational observer map F and K(R) are measurable"
+      - "Nontrivial fixation events with finite resource constraints"
+    falsification:
+      - "Устойчивые классы систем с N_t>K(R_t), где наблюдаемая энтропийная стрелка отсутствует"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-013
+    title: "Low-externality regime for money-to-tau_social approximation"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "Существует режим (низкие внешние эффекты и информационная асимметрия), где денежные метрики аппроксимируют tau_social с малой систематической ошибкой."
+    scope: "Socio-economic calibration layer"
+    assumptions:
+      - "Operational tau_social metric is defined"
+      - "Externalities and information asymmetry are independently measurable"
+      - "Comparable datasets across regimes"
+    falsification:
+      - "Высокая систематическая ошибка money->tau_social сохраняется в низко-искаженных режимах"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+      - "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-SocioEconomic.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-014
+    title: "Norm persistence tracks long-horizon tau_sys minimization"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "Долгоживущие социальные нормы в повторяющихся взаимодействиях статистически соответствуют стратегиям, уменьшающим E[tau_long_sys] относительно краткосрочных альтернатив."
+    scope: "Ethics-as-policy layer"
+    assumptions:
+      - "Repeated interaction setting with norm dynamics"
+      - "Tau_sys is operationalized for compared strategies"
+      - "Norm persistence is measurable over long horizons"
+    falsification:
+      - "Стабильно сохраняющиеся нормы не уменьшают E[tau_long_sys] относительно жадных baseline-стратегий"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+      - "fcdm-core/theory/fror/FROR_experiment_registry.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-015
+    title: "Internal tau accounting reduces long-horizon catastrophic errors"
+    owner_doc: "fcdm-core/theory/fror/FROR_agency_profile.md"
+    status: Conjecture
+    statement: "Системы с внутренним учетом цены необратимых фиксаций демонстрируют меньшую частоту катастрофических ошибок на длинном горизонте по сравнению с системами без такого учета."
+    scope: "AGI responsibility profile"
+    assumptions:
+      - "Matched model classes with/without internal tau accounting"
+      - "Catastrophic error metric is predefined and reproducible"
+      - "Long-horizon evaluation under distribution shift"
+    falsification:
+      - "Отсутствие снижения частоты катастрофических ошибок у систем с внутренним tau-учетом"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_agency_profile.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-016
+    title: "Cross-domain calibration via invariant dimensionless groups"
+    owner_doc: "fcdm-core/theory/fror/FROR_DomainLexicon.md"
+    status: Conjecture
+    statement: "Существует набор безразмерных инвариантных групп, позволяющий переносить FROR-предсказания между физическими, вычислительными, когнитивными и социальными нормализациями."
+    scope: "Cross-domain normalization layer"
+    assumptions:
+      - "Domain mappings satisfy V1..V4 constraints"
+      - "Candidate invariant groups are explicitly defined"
+      - "Prediction targets are comparable after calibration"
+    falsification:
+      - "Невозможность построить переносимую междоменную калибровку без нарушения FROR-инвариантов"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_DomainLexicon.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-06"
+
+  - claim_id: FROR-CLM-017
+    title: "Typical rollback cost is exponential in distinguishability deficit"
+    owner_doc: "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+    status: Conjecture
+    statement: "В типичных ветвящихся процессах минимальная цена точного rollback растет не менее чем экспоненциально по DeltaI_miss."
+    scope: "Rollback complexity layer"
+    assumptions:
+      - "Branching process class is explicitly specified"
+      - "Rollback optimality criterion is fixed"
+      - "DeltaI_miss is measured per canonical D8 definition"
+    falsification:
+      - "Устойчивые широкие классы ветвящихся систем с субэкспоненциальной нижней границей rollback-cost по DeltaI_miss"
+    evidence_refs:
+      - "fcdm-core/theory/fror/FROR_axioms_v0_2.md"
+      - "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+    updated_at: "2026-03-06"

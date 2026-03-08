@@ -12,13 +12,13 @@
 ------------------------------------------------------------------------
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_3plus1_phase]]
-- [[FROR_SLOT]]
-- [[FROR_SLOT_FORM]]
-- [[FROR_class_measurement]]
-- [[FROR_GRAPH]]
-- [[FROR_normalizations_invariants]]
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_GRAPH](./FROR_GRAPH.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ------------------------------------------------------------------------
 

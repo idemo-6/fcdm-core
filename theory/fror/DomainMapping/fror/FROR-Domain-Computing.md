@@ -7,9 +7,9 @@ tags: [FROR, DomainLexicon, computing]
 # FROR в вычислительных системах
 
 Связанные канонические документы:
-- [[FROR_DomainLexicon]]
-- [[FROR_normalizations_invariants]]
-- [[FROR_class_measurement]]
+- [FROR_DomainLexicon](../../FROR_DomainLexicon.md)
+- [FROR_normalizations_invariants](../../FROR_normalizations_invariants.md)
+- [FROR_class_measurement](../../FROR_class_measurement.md)
 
 ## Отображение канона
 

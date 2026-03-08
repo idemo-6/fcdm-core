@@ -9,14 +9,14 @@
 ---
 
 ## Связанные заметки
-- [[FROR_architecture_v2]]
-- [[FROR_resource_layer]]
-- [[FROR_main]]
-- [[FROR_3plus1_phase]]
-- [[FROR_SLOT]]
-- [[FROR_ds3_attractor]]
-- [[FROR_normalizations_invariants]]
-- [[FROR_symmetry_memory_threshold]]
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [FROR_resource_layer](./FROR_resource_layer.md)
+- [FROR_main](./FROR_main.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
+- [FROR_distinguishability_resource_threshold](./FROR_distinguishability_resource_threshold.md)
 - [claims_registry](./claims_registry.yaml)
 
 ---
@@ -28,6 +28,7 @@
 | FROR-CLM-001 | Core | [claims_registry](./claims_registry.yaml) |
 | FROR-CLM-002 | Core | [claims_registry](./claims_registry.yaml) |
 | FROR-CLM-003 | Core | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-017 | Conjecture | [claims_registry](./claims_registry.yaml) |
 
 ## 0) Базовые объекты и обозначения
 

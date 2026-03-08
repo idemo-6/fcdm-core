@@ -7,9 +7,9 @@ tags: [FROR, DomainLexicon, physics]
 # FROR в физике
 
 Связанные канонические документы:
-- [[FROR_DomainLexicon]]
-- [[FROR_axioms_v0_2]]
-- [[FROR_3plus1_phase]]
+- [FROR_DomainLexicon](../../FROR_DomainLexicon.md)
+- [FROR_axioms_v0_2](../../FROR_axioms_v0_2.md)
+- [FROR_3plus1_phase](../../FROR_3plus1_phase.md)
 
 ## Отображение канона
 

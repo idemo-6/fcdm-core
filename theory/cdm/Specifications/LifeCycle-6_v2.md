@@ -12,6 +12,17 @@ citekey: cdm_lifecycle6_canonical_ru_2026
 
 ---
 
+## 0. Ultra-Short Canonical Form
+
+- `LC-6` — макро-фазовая геометрия повторяющихся циклов `CF-6`.
+- Операционная связь: `x_(k+1) = CF6(x_k)`.
+- `LC` фиксирует режим существования системы, `CF` реализует шаг изменения.
+- Обновление `LC` выполняется только через `CF6` (см. Evaluate-связь).
+- Интерпретация фаз по статистике циклов задается `Psi: stats({CF6_k}) -> LC_phase`.
+- Полная формализация: [[fcdm-core/theory/cdm/Specifications/CDM-v2-Minimality-Canonical-Short|CDM-v2-Minimality-Canonical-Short]].
+
+---
+
 ## 1. Область определения
 
 Документ задаёт **LifeCycle-6** как каноническую, доменно-независимую топологию существования экземпляра системы:
@@ -31,6 +42,7 @@ citekey: cdm_lifecycle6_canonical_ru_2026
 - Спецификация PhaseTransition
 - [[fcdm-core/theory/cdm/Specifications/DegradeVector-Canonical|DegradeVector-Canonical]]
 - Определения Система / Идентичность
+- [[fcdm-core/theory/cdm/Specifications/CDM-v2-Transition-Spec|CDM-v2-Transition-Spec]]
 
 ---
 
@@ -340,3 +352,24 @@ LifeCycle-6 опровергнут для класса ≥ 1, если:
 
 - определить DomainLexicon
 - задать операторы наблюдения T1..T6
+
+---
+
+## 12. Переходный слой CDM v2
+
+Данная спецификация совместима с переходным слоем:
+[[fcdm-core/theory/cdm/Specifications/CDM-v2-Transition-Spec|CDM-v2-Transition-Spec]].
+
+Интеграционные правила:
+
+- `F1..F6` сохраняют канонические предикаты фаз и условия существования;
+- `LC` трактуется как мета-контур, который конфигурирует исполнение `CF` в каждой фазе;
+- параметры политики (`ControlSet`, пороги, наблюдательный контракт) остаются источником фазовых решений;
+- изменение состояния `LC` по-прежнему фиксируется только через `CF6` (см. CF-LC-Evaluate).
+
+Минимальный контракт `LC -> CF` для переходной фазы:
+
+- бюджет ресурса цикла (`R_phase`);
+- допустимый риск необратимых затрат (`tau_risk_max`);
+- приоритеты `CF1..CF6`;
+- критерии выхода из текущей LC-фазы (`exit_criteria`).

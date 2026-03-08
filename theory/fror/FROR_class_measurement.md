@@ -1,13 +1,13 @@
 # **0) Общие измерители (для обоих классов)**
 
 ## Связанные заметки
-- [[FROR_architecture_v2]]
-- [[FROR_GRAPH]]
-- [[FROR_SLOT_FORM]]
-- [[FROR_ds3_attractor]]
-- [[FROR_SLOT]]
-- [[FROR_3plus1_phase]]
-- [[FROR_normalizations_invariants]]
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [FROR_GRAPH](./FROR_GRAPH.md)
+- [FROR_SLOT_FORM](./FROR_SLOT_FORM.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ---
 

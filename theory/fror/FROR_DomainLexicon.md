@@ -24,6 +24,7 @@ title: "FROR DomainLexicon: доменно-специфическая интер
 | claim_id | status | registry |
 |---|---|---|
 | FROR-CLM-008 | Protocol | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-016 | Conjecture | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

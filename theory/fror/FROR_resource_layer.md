@@ -1,10 +1,10 @@
 # **ФРОР: ресурсный слой (аксиоматика, v0)**
 
 ## Связанные заметки
-- [[FROR_axioms_v0_2]]
-- [[FROR_main]]
-- [[FROR_3plus1_phase]]
-- [[FROR_normalizations_invariants]]
+- [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
+- [FROR_main](./FROR_main.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ---
 

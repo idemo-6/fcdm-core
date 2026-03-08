@@ -129,7 +129,7 @@ events:
     event_type: Claim.Created
     to_status: Conjecture
     actor: "author"
-    evidence_ref: "fcdm-core/theory/fror/FROR_symmetry_memory_threshold.md"
+    evidence_ref: "fcdm-core/theory/fror/FROR_distinguishability_resource_threshold.md"
 
   - event_id: EVT-FROR-0016
     timestamp: "2026-03-03T11:15:00Z"
@@ -172,3 +172,75 @@ events:
     to_status: Protocol
     actor: "author"
     evidence_ref: "fcdm-core/theory/fror/DomainMapping/fror/FROR-Domain-Computing.md"
+
+  - event_id: EVT-FROR-0021
+    timestamp: "2026-03-06T15:05:00Z"
+    claim_id: FROR-CLM-009
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0022
+    timestamp: "2026-03-06T15:06:00Z"
+    claim_id: FROR-CLM-010
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0023
+    timestamp: "2026-03-06T15:07:00Z"
+    claim_id: FROR-CLM-011
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0024
+    timestamp: "2026-03-06T15:08:00Z"
+    claim_id: FROR-CLM-012
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_normalizations_invariants.md"
+
+  - event_id: EVT-FROR-0025
+    timestamp: "2026-03-06T15:09:00Z"
+    claim_id: FROR-CLM-013
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0026
+    timestamp: "2026-03-06T15:10:00Z"
+    claim_id: FROR-CLM-014
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0027
+    timestamp: "2026-03-06T15:11:00Z"
+    claim_id: FROR-CLM-015
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_agency_profile.md"
+
+  - event_id: EVT-FROR-0028
+    timestamp: "2026-03-06T15:12:00Z"
+    claim_id: FROR-CLM-016
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_DomainLexicon.md"
+
+  - event_id: EVT-FROR-0029
+    timestamp: "2026-03-06T15:13:00Z"
+    claim_id: FROR-CLM-017
+    event_type: Claim.Created
+    to_status: Conjecture
+    actor: "author"
+    evidence_ref: "fcdm-core/theory/fror/FROR_axioms_v0_2.md"

@@ -1,12 +1,12 @@
 # **1) Минимальная формализация SLOT-устойчивости**
 
 ## Связанные заметки
-- [[FROR_SLOT]]
-- [[FROR_ds3_attractor]]
-- [[FROR_class_measurement]]
-- [[FROR_GRAPH]]
-- [[FROR_3plus1_phase]]
-- [[FROR_normalizations_invariants]]
+- [FROR_SLOT](./FROR_SLOT.md)
+- [FROR_ds3_attractor](./FROR_ds3_attractor.md)
+- [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_GRAPH](./FROR_GRAPH.md)
+- [FROR_3plus1_phase](./FROR_3plus1_phase.md)
+- [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ---
 

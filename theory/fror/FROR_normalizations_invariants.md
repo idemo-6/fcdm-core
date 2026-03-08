@@ -13,7 +13,7 @@
 - [FROR_ds3_attractor](./FROR_ds3_attractor.md)
 - [FROR_class_measurement](./FROR_class_measurement.md)
 - [FROR_GRAPH](./FROR_GRAPH.md)
-- [FROR_symmetry_memory_threshold](./FROR_symmetry_memory_threshold.md)
+- [FROR_distinguishability_resource_threshold](./FROR_distinguishability_resource_threshold.md)
 - [FROR_thermo_profile](./FROR_thermo_profile.md)
 - [FROR_electro_profile](./FROR_electro_profile.md)
 - [FROR_relativity_profile](./FROR_relativity_profile.md)
@@ -34,6 +34,7 @@
 |---|---|---|
 | FROR-CLM-004 | Protocol | [claims_registry](./claims_registry.yaml) |
 | FROR-CLM-008 | Protocol | [claims_registry](./claims_registry.yaml) |
+| FROR-CLM-012 | Conjecture | [claims_registry](./claims_registry.yaml) |
 
 ------------------------------------------------------------------------
 

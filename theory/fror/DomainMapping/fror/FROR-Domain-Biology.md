@@ -7,9 +7,9 @@ tags: [FROR, DomainLexicon, biology]
 # FROR в биологии
 
 Связанные канонические документы:
-- [[FROR_DomainLexicon]]
-- [[FROR_ds3_attractor]]
-- [[FROR_SLOT_FORM]]
+- [FROR_DomainLexicon](../../FROR_DomainLexicon.md)
+- [FROR_ds3_attractor](../../FROR_ds3_attractor.md)
+- [FROR_SLOT_FORM](../../FROR_SLOT_FORM.md)
 
 ## Отображение канона
 
@@ -33,4 +33,3 @@ tags: [FROR, DomainLexicon, biology]
 
 Локальные структуры поддерживаются не бесплатно: устойчивый порядок
 оплачивается глобальной ценой редукции альтернатив.
-
