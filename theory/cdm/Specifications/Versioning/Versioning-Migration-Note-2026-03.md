@@ -1,5 +1,5 @@
 ---
-title: "Migration Note: Versioning Governance Split (MMCF -> CDM -> FROR)"
+title: "Migration Note: Versioning Governance Split (CDM -> MMCF -> FROR)"
 date: 2026-03-03
 tags: [CDM, MMCF, versioning, migration-note, governance]
 citekey: cdm_versioning_migration_note_2026_03
@@ -11,8 +11,9 @@ citekey: cdm_versioning_migration_note_2026_03
 
 В марте 2026 введена двухуровневая модель управления versioning:
 
-1. `MMCF` хранит **методологический канон** versioning.
-2. `CDM` хранит **профиль применения** канона к LC/CF-структуре CDM.
+1. `CDM` хранит **канонический state-derived профиль** versioning.
+2. `MMCF` хранит **governance/application профиль** использования этого
+   канона.
 3. `FROR` использует профиль CDM как операционную интеграцию в своем слое.
 
 Физическое расположение файлов CDM сохранено (мягкая миграция без переноса
@@ -22,18 +23,18 @@ citekey: cdm_versioning_migration_note_2026_03
 
 ## 2. Целевая иерархия
 
-`MMCF canonical -> CDM profile -> FROR usage`
+`CDM canonical -> MMCF governance profile -> FROR usage`
 
-### 2.1 MMCF canonical
-
-- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
-- [MMCF Claim Maturity Canonical](../../../../../mmcf-docs/methodology/Claim-Maturity-Canonical.md)
-
-### 2.2 CDM profile
+### 2.1 CDM canonical
 
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
 - [[fcdm-core/theory/cdm/Specifications/Claim-Maturity-Profile|Claim-Maturity-Profile]]
+
+### 2.2 MMCF governance profile
+
+- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
+- [MMCF Claim Maturity Canonical](../../../../../mmcf-docs/methodology/Claim-Maturity-Canonical.md)
 
 ### 2.3 FROR usage
 
@@ -43,11 +44,11 @@ citekey: cdm_versioning_migration_note_2026_03
 
 ## 3. Принцип разделения ответственности
 
-1. MMCF отвечает за норму governance:
-   state-derived, audit/override, независимость осей `EntityVersion` и
-   `ClaimStatus`.
-2. CDM отвечает за профильные детали:
+1. CDM отвечает за каноническое ядро versioning:
    формат `v.<inc>.<lc>.<cf>.<cfp>`, event log derivation и LC/CF-гейты.
+2. MMCF отвечает за норму governance:
+   правила operational usage, audit/override discipline и независимость осей
+   `EntityVersion` и `ClaimStatus`.
 3. FROR отвечает за применение этого механизма к исследовательским
    утверждениям и архитектуре слоев.
 
@@ -63,7 +64,7 @@ citekey: cdm_versioning_migration_note_2026_03
 
 ## 5. Практический эффект
 
-1. Versioning формально принадлежит governance-слою MMCF.
-2. CDM остается источником профильных operational-правил.
+1. Versioning формально принадлежит каноническому слою CDM.
+2. MMCF остается governance/application слоем над этим каноном.
 3. FROR/CDM получают единый язык для версий сущности и зрелости тезисов
    без смешения этих осей.

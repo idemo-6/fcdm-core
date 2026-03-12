@@ -7,11 +7,14 @@ citekey: cdm_versioning_profile_ru_2026
 
 # CDM Profile: Versioning (state-derived)
 
-> Документ задает **CDM-профиль применения** канона versioning из MMCF.
+> Документ задает **канонический CDM-профиль** state-derived versioning для
+> сущностей, проходящих `LifeCycle` и `ChangeFlow`. MMCF может использовать
+> этот профиль как governance/application mapping, но не задает первичный
+> source of truth для версии.
 
 ---
 
-## 1. Область определения (профиль CDM)
+## 1. Область определения
 
 Документ задает профильную схему версионирования сущностей CDM:
 
@@ -26,7 +29,7 @@ citekey: cdm_versioning_profile_ru_2026
 
 ## 2. Нормативные ссылки
 
-- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
+- [MMCF Versioning Governance Profile](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/LifeCycle-6_v2|LifeCycle-6]]
 - [[fcdm-core/theory/cdm/Specifications/ChangeFlow-6_v3|ChangeFlow-6]]
 - [[fcdm-core/theory/cdm/Specifications/PhaseTransition_Specifications/PhaseTransition_Overview|PhaseTransition Overview]]

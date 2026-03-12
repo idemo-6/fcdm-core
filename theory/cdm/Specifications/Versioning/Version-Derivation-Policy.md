@@ -17,8 +17,8 @@ citekey: cdm_version_derivation_profile_policy_ru_2026
 
 Нормативная база:
 
-- [MMCF Versioning Canonical](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 - [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
+- [MMCF Versioning Governance Profile](../../../../../mmcf-docs/methodology/Versioning-Canonical.md)
 
 ---
 
