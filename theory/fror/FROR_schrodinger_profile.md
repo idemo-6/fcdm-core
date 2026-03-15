@@ -7,6 +7,8 @@
 - [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_hilbert_profile](./FROR_hilbert_profile.md)
+- [FROR_Born_rule](./FROR_Born_rule.md)
+- [FROR_measurement_profile](./FROR_measurement_profile.md)
 - [FROR_thermo_profile](./FROR_thermo_profile.md)
 
 ------------------------------------------------------------------------

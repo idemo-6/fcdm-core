@@ -8,6 +8,14 @@
 - [FROR_SLOT](./FROR_SLOT.md)
 - [FROR_3plus1_phase](./FROR_3plus1_phase.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
+- [FROR_measurement_profile](./FROR_measurement_profile.md)
+
+---
+
+Этот файл хранит **операциональные измерители и протоколы**.
+Профильная интерпретация измерения как акта фиксации различия вынесена в
+[FROR_measurement_profile](./FROR_measurement_profile.md), чтобы не смешивать
+experiment-layer и interpretive-layer.
 
 ---
 
