@@ -17,6 +17,9 @@
 - [FROR_ds3_attractor](./FROR_ds3_attractor.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_distinguishability_resource_threshold](./FROR_distinguishability_resource_threshold.md)
+- [FROR_hilbert_profile](./FROR_hilbert_profile.md)
+- [FROR_Born_rule](./FROR_Born_rule.md)
+- [FROR_measurement_profile](./FROR_measurement_profile.md)
 - [claims_registry](./claims_registry.yaml)
 
 ---
@@ -236,6 +239,11 @@ $$
 Каноническая интерпретация времени/необратимости вынесена в
 [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 (инварианты I3--I4).
+
+Важно: из T1 не следует автоматически никакая конкретная квантовая или
+амплитудная форма описания. Такие чтения возможны только как профильные
+гипотезы поверх канона и не являются следствием A1..A5 без
+дополнительных предпосылок.
 
 ---
 

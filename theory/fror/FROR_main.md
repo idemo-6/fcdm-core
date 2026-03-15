@@ -11,7 +11,11 @@
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_distinguishability_resource_threshold](./FROR_distinguishability_resource_threshold.md)
 - [FROR_agency_profile](./FROR_agency_profile.md)
+- [FROR_dual_layer_profile](./FROR_dual_layer_profile.md)
+- [FROR_Born_rule](./FROR_Born_rule.md)
+- [FROR_measurement_profile](./FROR_measurement_profile.md)
 - [FROR_CDM_bridge](../cdm/bridge/FROR_CDM_bridge.md)
+- [Trinarity_CrossLayer_Invariant](../cdm/Specifications/Trinarity-CrossLayer-Invariant.md)
 - [claims_registry](./claims_registry.yaml)
 
 ------------------------------------------------------------------------
@@ -83,6 +87,15 @@ $M = ⌈log₂ \|Σ\|⌉ = ⌈log₂ R⌉$
 Память, энергия, внимание, капитал и другие величины являются доменными
 представлениями ресурса в соответствующих нормализациях; это не
 утверждение об их онтологическом тождестве без калибровки.
+
+Operational note:
+- `R = |Sigma|` задаёт канонический дискретный ресурс различения;
+- `M = ceil(log2 R)` даёт бит-эквивалент;
+- `K(R)` задаёт число альтернатив, которые система реально может
+  удерживать как раздельные в выбранной нормализации.
+
+Это разделение важно для перехода от канона к доменным профилям и
+избегает смешения memory-only языка с общим ресурсом различения.
 
 ------------------------------------------------------------------------
 
@@ -257,6 +270,17 @@ coarse-graining: часть альтернатив склеивается.
 $$
 \delta_t=\max(0,\log_2N_t-\log_2K(R_t)).
 $$
+
+Именно этот язык дефицита различимости образует канонический предел FROR
+на уровне `Core`. Более сильные чтения про амплитуды, Born-like
+вероятность, measurement-like collapse или dual-layer ontology не входят
+в этот файл как канон и вынесены в профильный слой:
+
+- [FROR_hilbert_profile](./FROR_hilbert_profile.md)
+- [FROR_schrodinger_profile](./FROR_schrodinger_profile.md)
+- [FROR_Born_rule](./FROR_Born_rule.md)
+- [FROR_measurement_profile](./FROR_measurement_profile.md)
+- [FROR_dual_layer_profile](./FROR_dual_layer_profile.md)
 
 Накопление $\delta_t$ означает потерю информации о ветвлении траектории.
 Точный rollback логически не запрещён, но требует дополнительного ресурса
