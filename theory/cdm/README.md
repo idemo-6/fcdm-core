@@ -1,58 +1,44 @@
-# CDM Index
+# CDM
 
-Governance Index: [[fcdm-core/theory/cdm/Specifications/Governance/Canonical-DSL-Governance|Canonical-DSL-Governance]]
-DegradeVector Canonical: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Canonical|DegradeVector-Canonical]]
-Aggregate Metrics Model Core: [[fcdm-core/theory/cdm/Specifications/Aggregate-Metrics-Model-Core|Aggregate-Metrics-Model-Core]]
-DegradeVector Machine Contract: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Machine-Contract|DegradeVector-Machine-Contract]]
-DegradeVector Domain Template: [[fcdm-core/theory/cdm/Specifications/DegradeVector-Domain-Template|DegradeVector-Domain-Template]]
-DegradeVector Conformance (minimal): [[fcdm-core/theory/cdm/Specifications/DegradeVector-Conformance-Minimal|DegradeVector-Conformance-Minimal]]
-Experience Package: [[fcdm-core/theory/cdm/Specifications/Experience/Experience-Canonical|Experience-Canonical]]
-ChangeOperators Canonical: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Canonical|ChangeOperators-Canonical]]
-ChangeOperators Profile: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Access-Profile|ChangeOperators-Access-Profile]]
-TIL Profile: [[fcdm-core/theory/cdm/Specifications/Operators/TIL-Implementation-Profile|TIL-Implementation-Profile]]
-TIL Lifecycle Profile: [[fcdm-core/theory/cdm/Specifications/Operators/TIL-Lifecycle-Profile|TIL-Lifecycle-Profile]]
-Operator Novelty Profile (optional): [[fcdm-core/theory/cdm/Specifications/Operators/Operator-Novelty-Constraint-Profile|Operator-Novelty-Constraint-Profile]]
-ChangeOperators Examples: [[fcdm-core/theory/cdm/Specifications/Operators/ChangeOperators-Examples|ChangeOperators-Examples]]
-Probability Canonical: [[fcdm-core/theory/cdm/Specifications/Operators/Probability-Embedded-Operator-Canonical|Probability-Embedded-Operator-Canonical]]
-Probability Decision Profile: [[fcdm-core/theory/cdm/Specifications/Operators/Probability-Decision-Profile|Probability-Decision-Profile]]
-ChangeFlow Execution Profile (ICSS, PT-gating, CF5-only attest): [[fcdm-core/theory/cdm/Specifications/ChangeFlow-6_v3|ChangeFlow-6]]
-CDM v2 Transition Layer (LC-6 <-> CF-6): [[fcdm-core/theory/cdm/Specifications/CDM-v2-Transition-Spec|CDM-v2-Transition-Spec]]
-CDM v2 Minimality Theorem (CF-6 -> LC-6): [[fcdm-core/theory/cdm/Specifications/CDM-v2-Minimality-Theorem|CDM-v2-Minimality-Theorem]]
-CDM v2 Minimality Short (canonical quote form): [[fcdm-core/theory/cdm/Specifications/CDM-v2-Minimality-Canonical-Short|CDM-v2-Minimality-Canonical-Short]]
-CDM v2 LC->CF Mapping Profile: [[fcdm-core/theory/cdm/Specifications/CDM-v2-LC-CF-Mapping-Profile|CDM-v2-LC-CF-Mapping-Profile]]
-CDM v2 Minimal Conformance Checklist: [[fcdm-core/theory/cdm/Specifications/CDM-v2-Conformance-Minimal|CDM-v2-Conformance-Minimal]]
-CDM v2 LC->CF YAML Template: [[fcdm-core/theory/cdm/Specifications/templates/lc_cf_profile.yaml|lc_cf_profile.yaml]]
-System Canonical: [[fcdm-core/theory/cdm/Specifications/System/System-Canonical|System-Canonical]]
-Identity Canonical: [[fcdm-core/theory/cdm/Specifications/System/Identity-Canonical|Identity-Canonical]]
-Identity Profile: [[fcdm-core/theory/cdm/Specifications/System/Identity-Scoring-Profile|Identity-Scoring-Profile]]
-Identity Examples: [[fcdm-core/theory/cdm/Specifications/System/Identity-Examples|Identity-Examples]]
-System Classification Profile: [[fcdm-core/theory/cdm/Specifications/System/System-Classification-Profile|System-Classification-Profile]]
-Subjectivity Canonical: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Canonical|Subjectivity-Canonical]]
-Subjectivity Model Core: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Model-Core|Subjectivity-Model-Core]]
-Subjectivity Examples: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Examples|Subjectivity-Examples]]
-Subjectivity Related Models (non-normative): [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Related-Models|Subjectivity-Related-Models]]
-Subjectivity Reference Agent Profile: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Reference-Agent-Profile|Subjectivity-Reference-Agent-Profile]]
-Subjectivity Software Creativity Profile: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Software-Creativity-Profile|Subjectivity-Domain-Software-Creativity-Profile]]
-Subjectivity ML Creativity Profile: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-ML-Creativity-Profile|Subjectivity-Domain-ML-Creativity-Profile]]
-Subjectivity Corporate Strategy Profile: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Corporate-Strategy-Profile|Subjectivity-Domain-Corporate-Strategy-Profile]]
-Subjectivity Biology Population Profile: [[fcdm-core/theory/cdm/Specifications/System/Subjectivity-Domain-Profiles/Subjectivity-Domain-Biology-Population-Profile|Subjectivity-Domain-Biology-Population-Profile]]
-Doubt Canonical: [[fcdm-core/theory/cdm/Specifications/System/Doubt-Canonical|Doubt-Canonical]]
-Doubt Model Core: [[fcdm-core/theory/cdm/Specifications/System/Doubt-Model-Core|Doubt-Model-Core]]
-Doubt Examples: [[fcdm-core/theory/cdm/Specifications/System/Doubt-Examples|Doubt-Examples]]
-Doubt Related Models (non-normative): [[fcdm-core/theory/cdm/Specifications/System/Doubt-Related-Models|Doubt-Related-Models]]
-Viewpoint Canonical: [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Canonical|Viewpoint-Canonical]]
-Viewpoint Evolution Model Core: [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Evolution-Model-Core|Viewpoint-Evolution-Model-Core]]
-Viewpoint/MetaChangeFlow Examples: [[fcdm-core/theory/cdm/Specifications/System/Viewpoint-Examples|Viewpoint-Examples]]
-MetaChangeFlow Canonical: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Canonical|MetaChangeFlow-Canonical]]
-MetaChangeFlow Trigger Policy: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Trigger-Policy|MetaChangeFlow-Trigger-Policy]]
-MetaChangeFlow Model Core: [[fcdm-core/theory/cdm/Specifications/System/MetaChangeFlow-Model-Core|MetaChangeFlow-Model-Core]]
-Creative ChangeFlow Canonical: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Canonical|CreativeChangeFlow-Canonical]]
-Creative ChangeFlow Model Core: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Model-Core|CreativeChangeFlow-Model-Core]]
-Creative ChangeFlow Examples: [[fcdm-core/theory/cdm/Specifications/System/CreativeChangeFlow-Examples|CreativeChangeFlow-Examples]]
-Legacy Migration Map (MMCF bundle): [[fcdm-core/theory/cdm/Specifications/System/Legacy-Migration-Map-MMCF|Legacy-Migration-Map-MMCF]]
-Applied Rule Profile: [[fcdm-core/theory/cdm/Specifications/AppliedRules/RLC-CC-Profile|RLC-CC]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/ROS-Profile|ROS]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/SEC-OC-Profile|SEC-OC]], [[fcdm-core/theory/cdm/Specifications/AppliedRules/Observer-Profile|Observer]]
-Versioning Profile (CDM): [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Canonical|Versioning-Canonical]]
-Version Derivation Policy (CDM): [[fcdm-core/theory/cdm/Specifications/Versioning/Version-Derivation-Policy|Version-Derivation-Policy]]
-Versioning Examples (CDM): [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Examples|Versioning-Examples]]
-Versioning Migration Note (2026-03): [[fcdm-core/theory/cdm/Specifications/Versioning/Versioning-Migration-Note-2026-03|Versioning-Migration-Note-2026-03]]
-Claim Maturity Profile: [[fcdm-core/theory/cdm/Specifications/Claim-Maturity-Profile|Claim-Maturity-Profile]]
+`CDM` в текущем стеке следует читать как канонический execution layer между
+`FROR` и прикладными operational слоями.
+
+Короткая вертикаль:
+
+1. `FROR` — инварианты ресурса различения, фиксации и эффективной
+   необратимости;
+2. `CDM` — каноническая логика исполнения изменения;
+3. `MMCF` и delivery-профили — applied governance / operational layer.
+
+## С чего начать
+
+- [CDM index](./CDM_INDEX.md)
+- [CDM canonical status and positioning](./CDM_CANONICAL_STATUS_AND_POSITIONING.md)
+- [FROR <-> CDM bridge](./bridge/FROR_CDM_bridge.md)
+
+## Главные канонические входы
+
+- [LifeCycle-6](./Specifications/LifeCycle-6_v2.md)
+- [ChangeFlow-6](./Specifications/ChangeFlow-6_v3.md)
+- [Intent](./Specifications/Intent-1.1.5.md)
+- [Context Canonical](./Specifications/Context/Context-Canonical.md)
+- [System Canonical](./Specifications/System/System-Canonical.md)
+- [PhaseTransition Overview](./Specifications/PhaseTransition_Specifications/PhaseTransition_Overview.md)
+
+## Governance and maturity
+
+- [Canonical-DSL-Governance](./Specifications/Governance/Canonical-DSL-Governance.md)
+- [Claim-Maturity-Profile](./Specifications/Claim-Maturity-Profile.md)
+
+## Domain portability
+
+- [DomainLexicon](./DomainLexicon.md)
+- [DomainMapping/cf](./DomainMapping/cf)
+- [DomainMapping/lc](./DomainMapping/lc)
+- [DomainMapping/pt](./DomainMapping/pt)
+
+## More detailed index
+
+Полный навигационный индекс находится в:
+
+- [CDM index](./CDM_INDEX.md)

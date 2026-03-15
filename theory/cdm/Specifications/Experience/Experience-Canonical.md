@@ -27,6 +27,7 @@ citekey: cdm_experience_canonical_ru_2026
 - Спецификация Context (каноническая)
 - Спецификация CtxL (каноническая)
 - Спецификация: Связь ChangeFlow ↔ LifeCycle (Evaluate)
+- Спецификация: Сквозной инвариант тринарности (FROR ↔ CDM ↔ CtxL)
 
 ---
 
@@ -92,6 +93,10 @@ citekey: cdm_experience_canonical_ru_2026
 - `0`: неприменимо (`ApplicabilityFailure`), включая неопределенность как частный случай.
 
 Декомпозиция причин `0` (`AF_sem/AF_epi/AF_sto`) относится к аналитическому уровню.
+
+Норма межслойной согласованности: FROR-класс `0_no_cost_transition`
+(переход без роста `tau`) не отождествляется с runtime `Result=0`,
+который в каноне Experience зарезервирован для `ApplicabilityFailure`.
 
 ---
 

@@ -1,5 +1,13 @@
 # FROR Claims: User Workflow (Registry, Event Log, Git Hooks)
 
+## Связанные заметки
+- [FROR_architecture_v2](./FROR_architecture_v2.md)
+- [claims_registry](./claims_registry.yaml)
+- [claim_event_log](./claim_event_log.yaml)
+- [check_claim_status_transitions.py](./check_claim_status_transitions.py)
+
+---
+
 ## 1. Цель
 
 Документ описывает полный рабочий цикл зрелости утверждений FROR:
