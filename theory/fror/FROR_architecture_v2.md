@@ -141,3 +141,16 @@
 1. Добавить событие в `claim_event_log.yaml`;
 2. Обновить `claims_registry.yaml` (только после валидного перехода);
 3. Запустить `python3 check_claim_status_transitions.py`.
+
+------------------------------------------------------------------------
+
+## 8) Обзорные файлы
+
+Обзорные карты допускаются как навигационный слой над корпусом, если они:
+
+1. не вводят новые claims;
+2. не подменяют `Core/Criteria/Profiles/Experiments`;
+3. явно маркируются как `Overview`.
+
+Текущий обзорный файл:
+- [FROR_unification_overview](./FROR_unification_overview.md)
