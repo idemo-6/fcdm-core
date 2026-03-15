@@ -7,6 +7,10 @@
 - [FROR_axioms_v0_2](./FROR_axioms_v0_2.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 - [FROR_class_measurement](./FROR_class_measurement.md)
+- [FROR_distinguishability_resource_threshold](./FROR_distinguishability_resource_threshold.md)
+- [FROR_DomainLexicon](./FROR_DomainLexicon.md)
+- [FROR_agency_profile](./FROR_agency_profile.md)
+- [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md)
 - [claims_registry](./claims_registry.yaml)
 - [claim_event_log](./claim_event_log.yaml)
 
@@ -65,11 +69,32 @@
 
 | item_id | statement | layer_status | verification_type | primary_protocol | required_artifacts | support_criteria | non_support_criteria | priority |
 |---|---|---|---|---|---|---|---|---|
+| FROR-PROF-HILB-01 | Hilbert-like amplitude encoding as effective path bookkeeping | Conjectural profile | Mixed | `FROR_hilbert_profile.md` + `FROR_quantum_protocol_contour.md` | path-class spec + phase/amplitude assignment rule + composition tests + comparison with count-only bookkeeping | амплитудное кодирование воспроизводимо сохраняет композицию и объясняет интерференционно-подобные эффекты лучше count-only baseline в заявленном классе | не удается задать устойчивую фазовую структуру или амплитудная композиция систематически проваливается | P2 |
+| FROR-PROF-BORN-01 | Born-like probability from class-level amplitude aggregation | Conjectural profile | Mixed | `FROR_Born_rule.md` + `FROR_quantum_protocol_contour.md` | path-count baseline + amplitude baseline + normalization rule + comparative fit report | Born-like форма устойчиво описывает вероятности лучше чистого path-count baseline там, где заявлена интерференционная структура | count-only baseline достаточен или `|psi|^2` систематически не воспроизводит вероятности в заявленном режиме | P2 |
+| FROR-PROF-MEAS-01 | Measurement-like fixation regime as pre/post-fixation split | Conjectural profile | Mixed | `FROR_measurement_profile.md` + `FROR_quantum_protocol_contour.md` | explicit fixation operator `F` + outcome-trace format + fixation-cost traces + pre/post-fixation comparison report | воспроизводимо виден режимный разрыв между alternative bookkeeping до фиксации и outcome-trace режимом после фиксации | не удается выделить согласованный pre/post-fixation split или trace regime не отличим от pre-fixation bookkeeping | P2 |
 | FROR-PROF-REL-01 | Relativity-like effective symmetry regime | Conjectural profile | Empirical | `FROR_relativity_profile.md` tests | frame-change invariance report + continuum stability checks | корреляционные статистики инвариантны в заявленном эффективном классе | устойчивое нарушение заявленной инвариантности | P2 |
 | FROR-PROF-LS-01 | Finite `c_eff` correlation-speed bound | Conjectural profile | Empirical | `FROR_light_speed_profile.md` program | front-propagation dataset in `(r,tau)` + robustness report | конечный устойчивый `c_eff` на одном классе моделей | отсутствие устойчивого конечного `c_eff` | P2 |
 | FROR-PROF-GR-01 | GR-like effective geometry | Conjectural profile | Empirical | `FROR_gravity_profile.md` program | geodesic-fit benchmarks + curvature-path correlation | geodesic-like модели стабильно лучше базовых альтернатив | нет устойчивого выигрыша geodesic-like модели | P3 |
-| FROR-PROF-SCH-01 | Schrodinger-like reduced dynamics | Conjectural-to-Protocol | Mixed | `FROR_schrodinger_profile.md` program | reduced linear model + norm-conservation checks | в обратимом режиме устойчиво восстанавливается линейная/почти унитарная форма | линейная модель систематически хуже неунитарных альтернатив | P2 |
+| FROR-PROF-SCH-01 | Schrodinger-like reduced dynamics | Conjectural-to-Protocol | Mixed | `FROR_schrodinger_profile.md` + `FROR_quantum_protocol_contour.md` | reduced linear model + norm-conservation checks + generator reconstruction + non-unitary comparison models | в обратимом режиме устойчиво восстанавливается линейная/почти унитарная форма и деградирует на режимах платной фиксации как ожидается | линейная модель систематически хуже неунитарных альтернатив или norm-preserving regime не воспроизводится | P2 |
 | FROR-PROF-SM-01 | SM/QFT mappings from FROR profiles | Conjectural profile | Empirical | `FROR_sm_profile.md` + `FROR_electro_profile.md` | mapping assumptions + comparative fit reports | есть ограниченный воспроизводимый класс явлений, где профильная карта работает лучше baseline | отсутствие устойчивых улучшений или сильная нестабильность при малых вариациях | P3 |
+
+---
+
+## 3a. Quantum-like stack guardrail
+
+Пункты `FROR-PROF-HILB-01`, `FROR-PROF-BORN-01`, `FROR-PROF-MEAS-01`,
+`FROR-PROF-SCH-01` задают только profile-level evidence obligations.
+
+Они не означают:
+
+1. что FROR уже доказал квантовую механику;
+2. что подтверждение одного пункта автоматически подтверждает весь стек;
+3. что profile-level success равен переводу чего-либо в `Core`.
+
+Для этого семейства действует общее правило:
+
+- компонентная проверка раньше, чем целостная интерпретация;
+- protocol contour раньше, чем claim-maturity discussion.
 
 ---
 
