@@ -72,7 +72,21 @@
 
 ------------------------------------------------------------------------
 
-## 4. Matrix: assumptions, artifacts, tests, non-support
+## 4. File-level execution matrix
+
+| file | role | assumptions focus | tests focus | non-support focus |
+|---|---|---|---|---|
+| `FROR_hilbert_profile.md` | interpretive profile for amplitude encoding | path classes are well-defined; phase-like structure can be assigned; composition of classes is meaningful | amplitude composition vs count-only bookkeeping; stability of phase-sensitive aggregation | no stable phase structure or systematic failure of composition under aggregation |
+| `FROR_Born_rule.md` | interpretive profile for Born-like probability | class-level amplitudes are available; probability depends on aggregate class contribution, not only raw path count | compare `|psi|^2` against path-count baseline; normalization consistency under class aggregation | count-only baseline is sufficient or Born-like form fails systematically in the claimed regime |
+| `FROR_measurement_profile.md` | interpretive profile for fixation-as-measurement | explicit fixation operator `F`; pre/post-fixation distinction is operationally meaningful; fixed outcomes leave stable traces | pre-fixation vs post-fixation trace comparison; fixation-cost traces; outcome-trace persistence | no reproducible distinction between alternative bookkeeping and fixed outcome regime |
+| `FROR_schrodinger_profile.md` | interpretive profile for reduced linear dynamics | coarse-grained classes admit reduced evolution; a norm-like quantity is conserved in the reversible regime; fixation regime is separable | reduced linear model; norm-conservation checks; generator reconstruction; comparison against non-unitary alternatives | no stable norm-preserving regime or linear candidate is consistently worse than simpler alternatives |
+| `FROR_dual_layer_profile.md` | interpretive bridge | potential/fixed split is coherent and does not silently become ontology claim | coherence of pre/post-fixation reading across the stack; compatibility with fixation traces | the split remains purely rhetorical or conflicts with the operational fixation model |
+| `FROR_experiment_registry.md` | registry layer | every profile-level item has explicit artifacts and support/non-support criteria | registry completeness and consistency across items | quantum-like entries remain under-specified or silently drift into claim-like language |
+| `FROR_quantum_protocol_contour.md` | protocol contour | all four components can be kept in one execution contour without collapsing role boundaries | cross-file consistency of assumptions, artifacts, support criteria, non-support criteria | role collision remains and the stack is still readable only as narrative rather than protocol |
+
+------------------------------------------------------------------------
+
+## 5. Component matrix: assumptions, artifacts, tests, non-support
 
 | component | core assumptions | required artifacts | support criteria | non-support criteria |
 |---|---|---|---|---|
@@ -83,7 +97,7 @@
 
 ------------------------------------------------------------------------
 
-## 5. Minimal reproducible artifact package
+## 6. Minimal reproducible artifact package
 
 Any future execution pass on the quantum-like stack should produce at
 least:
@@ -102,7 +116,7 @@ least:
 
 ------------------------------------------------------------------------
 
-## 6. Registry alignment
+## 7. Registry alignment
 
 At minimum the contour must stay aligned with:
 
@@ -119,7 +133,7 @@ the stricter claim workflow.
 
 ------------------------------------------------------------------------
 
-## 7. Support and non-support discipline
+## 8. Support and non-support discipline
 
 The contour is only valid if each component has both:
 
@@ -140,7 +154,7 @@ Correct discipline:
 
 ------------------------------------------------------------------------
 
-## 8. Boundary with Core
+## 9. Boundary with Core
 
 Nothing in this contour changes the canonical FROR core:
 
@@ -154,7 +168,7 @@ registry items, artifacts, and the existing claim workflow.
 
 ------------------------------------------------------------------------
 
-## 9. Recommended execution order
+## 10. Recommended execution order
 
 1. Hilbert-like encoding:
    define path classes and amplitude aggregation assumptions
@@ -171,7 +185,7 @@ before the weaker prerequisites are operationalized.
 
 ------------------------------------------------------------------------
 
-## 10. Short form
+## 11. Short form
 
 Quantum Protocol Contour exists to make the FROR quantum-like stack
 auditable and executable without overstating what the corpus has already
