@@ -11,6 +11,14 @@
 Эта схема снижает "размытость": источник истины для каждого утверждения
 фиксируется в одном слое.
 
+Глобальная оговорка по умолчанию:
+
+- FROR-корпус не должен читаться как доказательство квантовой механики;
+- любой язык про амплитуды, Born, измерение, Schrodinger-like форму или
+  другие quantum-like режимы по умолчанию относится к `Profiles`,
+  `Protocol contours` или `Experiments`, но не к `Core`, если это явно не
+  закреплено отдельным более сильным маршрутом зрелости.
+
 ------------------------------------------------------------------------
 
 ## 1) Core (канон)
@@ -154,3 +162,18 @@
 
 Текущий обзорный файл:
 - [FROR_unification_overview](./FROR_unification_overview.md)
+
+------------------------------------------------------------------------
+
+## 9) Protocol contours
+
+Protocol contours допускаются как сквозные файлы, которые:
+
+1. не повышают зрелость утверждений сами по себе;
+2. не подменяют `Core` и не переписывают `Profiles`;
+3. собирают assumptions, required artifacts, support criteria и
+   non-support criteria в один воспроизводимый execution contour;
+4. служат мостом между `Profiles` и `Experiments`.
+
+Текущий protocol-contour файл:
+- [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md)
