@@ -8,6 +8,7 @@
 - [FROR_hilbert_profile](./FROR_hilbert_profile.md)
 - [FROR_schrodinger_profile](./FROR_schrodinger_profile.md)
 - [FROR_measurement_profile](./FROR_measurement_profile.md)
+- [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md)
 - [FROR_normalizations_invariants](./FROR_normalizations_invariants.md)
 
 ------------------------------------------------------------------------
@@ -18,6 +19,8 @@
 - Статус: `Conjectural`.
 - Назначение: описать условия, при которых вероятность результата после
   coarse-graining принимает Born-like форму.
+- Protocol alignment: execution-level artifacts and non-support rules are
+  normalized in [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 
@@ -126,6 +129,8 @@ Born-like профильная форма записывается как:
 4. способ отделения режима без фиксации от режима после платной фиксации.
 
 Без этих условий Born-like форма остаётся качественной гипотезой.
+Для execution-level трактовки также требуется явное сравнение с
+path-count baseline в том же классе постановок.
 
 ------------------------------------------------------------------------
 
@@ -155,6 +160,9 @@ Born-like профильная форма записывается как:
 2. не удаётся задать устойчивую фазовую/амплитудную структуру `A(p)`;
 3. квадратичная форма `|psi|^2` не воспроизводит вероятности даже когда
    интерференция классов наблюдаемо присутствует.
+
+Полный protocol-level пакет для этого профиля задаётся в
+[FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 

@@ -9,6 +9,7 @@
 - [FROR_dual_layer_profile](./FROR_dual_layer_profile.md)
 - [FROR_hilbert_profile](./FROR_hilbert_profile.md)
 - [FROR_Born_rule](./FROR_Born_rule.md)
+- [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md)
 
 ------------------------------------------------------------------------
 
@@ -18,6 +19,9 @@
 - Статус: `Conjectural / Interpretive`.
 - Назначение: отделить профильное чтение измерения от экспериментальных
   протоколов и общих измерителей.
+- Protocol alignment: execution-level trace requirements and non-support
+  criteria are normalized in
+  [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 
@@ -112,6 +116,10 @@
 3. критерий платного акта фиксации;
 4. правило, по которому outcome считается зафиксированным.
 
+Для execution-level трактовки также требуется:
+5. явный outcome-trace format;
+6. сопоставление pre-fixation bookkeeping и post-fixation trace regime.
+
 ------------------------------------------------------------------------
 
 ## 8. Ограничения профиля
@@ -122,6 +130,12 @@
 2. что FROR уже выводит численные вероятности результата;
 3. что граница "до/после измерения" универсальна вне выбранной
    нормализации.
+
+Profile-level non-support возникает, если не удаётся воспроизводимо
+выделить согласованный pre/post-fixation split в выбранной постановке.
+
+Полный protocol-level пакет для этого профиля задаётся в
+[FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 

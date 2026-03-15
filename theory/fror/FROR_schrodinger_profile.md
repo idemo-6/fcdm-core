@@ -9,6 +9,7 @@
 - [FROR_hilbert_profile](./FROR_hilbert_profile.md)
 - [FROR_Born_rule](./FROR_Born_rule.md)
 - [FROR_measurement_profile](./FROR_measurement_profile.md)
+- [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md)
 - [FROR_thermo_profile](./FROR_thermo_profile.md)
 
 ------------------------------------------------------------------------
@@ -19,6 +20,8 @@
 - Статус: `Conjectural-to-Protocol`.
 - Назначение: описать условия, при которых счетчик траекторий после
   coarse-graining принимает Schrodinger-like форму.
+- Protocol alignment: artifact requirements and model-comparison discipline
+  are normalized in [FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 
@@ -80,6 +83,9 @@
 4. критерий отделения обратимого этапа от этапа платной фиксации.
 
 Без этих условий Schrodinger-like форма считается качественной гипотезой.
+Для execution-level трактовки дополнительно требуется:
+5. generator reconstruction;
+6. явное сравнение с non-unitary alternatives на том же наборе данных.
 
 ------------------------------------------------------------------------
 
@@ -105,6 +111,9 @@
 2. режим без фиксации не допускает нормосохраняющего генератора;
 3. уравнение типа `i d psi / d tau = H psi` систематически не описывает
    редуцированную динамику лучше неунитарных альтернатив в том же режиме.
+
+Полный protocol-level пакет для этого профиля задаётся в
+[FROR_quantum_protocol_contour](./FROR_quantum_protocol_contour.md).
 
 ------------------------------------------------------------------------
 
